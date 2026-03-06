@@ -76,7 +76,7 @@
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; max-width: 100%; }
 
 body {
   font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -84,6 +84,7 @@ body {
   background: var(--white);
   line-height: 1.7;
   overflow-x: hidden;
+  max-width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -113,8 +114,11 @@ strong { color: var(--text-dark); }
 /* ============================================================
    UTILITIES
    ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
 .container {
   max-width: var(--max-width);
+  width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -241,6 +245,8 @@ strong { color: var(--text-dark); }
   z-index: 900;
   box-shadow: 0 2px 20px rgba(0,32,96,0.3);
   height: var(--header-h);
+  width: 100%;
+  overflow: hidden;
 }
 
 .header-inner {
