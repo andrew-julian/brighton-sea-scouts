@@ -11,9 +11,9 @@
    ============================================================ */
 :root {
   /* Colours */
-  --navy:           #002060;
-  --navy-mid:       #003080;
-  --navy-light:     #0050B3;
+  --navy:           #00335D;
+  --navy-mid:       #005495;
+  --navy-light:     #007BC3;
   --navy-pale:      #EAF0FA;
   --navy-pale-2:    #F4F7FD;
   --orange:         #F47920;
@@ -327,6 +327,27 @@ strong { color: var(--text-dark); }
   height: 2px;
   background: var(--orange);
   border-radius: 2px;
+}
+
+/* Scouts VIC official logo badge in header */
+.vic-header-badge {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: 0.75rem;
+  opacity: 0.92;
+  transition: opacity var(--transition);
+}
+.vic-header-badge:hover { opacity: 1; }
+.vic-header-badge img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 900px) {
+  .vic-header-badge { display: none; }
 }
 
 .nav-join-btn {
@@ -1688,7 +1709,7 @@ strong { color: var(--text-dark); }
    FOOTER
    ============================================================ */
 .site-footer {
-  background: #03163A;
+  background: #001D3D;
   color: rgba(255,255,255,0.7);
   padding: 5rem 0 0;
 }
@@ -1724,6 +1745,43 @@ strong { color: var(--text-dark); }
   margin-bottom: 1.5rem;
   max-width: 280px;
   line-height: 1.7;
+}
+
+.footer-vic-affiliation {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.footer-vic-affiliation img {
+  height: 52px;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity var(--transition);
+}
+.footer-vic-affiliation img:hover { opacity: 1; }
+.footer-vic-affiliation span {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.5;
+  max-width: 160px;
+}
+
+/* Section logos in sections page */
+.section-logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin-bottom: 0.75rem;
+  opacity: 0.92;
+}
+.section-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
 .footer-col h4 {
