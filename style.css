@@ -29,11 +29,11 @@
   --border:         #DDE3EE;
 
   /* Section accent colours — aligned with Scouts Australia uniform trim */
-  --section-joey:       #D97706;   /* amber/tan — Joey uniform trim */
-  --section-cubs:       #D4A017;   /* golden yellow — Cubs uniform trim */
-  --section-scouts:     #1F7A4A;   /* forest green — Scouts uniform trim */
-  --section-venturers:  #7B1F5A;   /* burgundy — Venturers uniform trim */
-  --section-rovers:     #B01020;   /* deep red — Rovers uniform trim */
+  --section-joey:       #B65518;   /* official Scouts VIC Joey orange */
+  --section-cubs:       #C89010;   /* official Scouts VIC Cubs gold */
+  --section-scouts:     #00AE42;   /* official Scouts VIC Scouts green */
+  --section-venturers:  #9E1B32;   /* official Scouts VIC Venturers red */
+  --section-rovers:     #DC1B32;   /* official Scouts VIC Rovers red */
 
   /* Section pale tints for card backgrounds */
   --joey-pale:      #FEF3E0;
@@ -471,6 +471,20 @@ strong { color: var(--text-dark); }
   overflow: hidden;
 }
 
+/* Scouts Victoria gumtree silhouette background */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('images/gumtree-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  opacity: 0.10;
+  pointer-events: none;
+  z-index: 0;
+}
+
 /* Subtle radial glow behind hero content */
 .hero::before {
   content: '';
@@ -480,7 +494,7 @@ strong { color: var(--text-dark); }
   transform: translateX(-50%);
   width: 800px;
   height: 600px;
-  background: radial-gradient(ellipse, rgba(0,80,179,0.35) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0,123,195,0.3) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -856,7 +870,7 @@ strong { color: var(--text-dark); }
   line-height: 1.5;
 }
 
-.adventure-card.sail  { background: linear-gradient(145deg, #002060 0%, #0050B3 100%); }
+.adventure-card.sail  { background: linear-gradient(145deg, #00335D 0%, #007BC3 100%); }
 .adventure-card.camp  { background: linear-gradient(145deg, #0D3318 0%, #1F7A4A 100%); }
 .adventure-card.adv   { background: linear-gradient(145deg, #3D1005 0%, #B83000 100%); }
 .adventure-card.reef  { background: linear-gradient(145deg, #003330 0%, #006655 100%); }
