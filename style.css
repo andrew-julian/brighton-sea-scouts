@@ -11,9 +11,9 @@
    ============================================================ */
 :root {
   /* Colours */
-  --navy:           #002060;
-  --navy-mid:       #003080;
-  --navy-light:     #0050B3;
+  --navy:           #00335D;
+  --navy-mid:       #005495;
+  --navy-light:     #007BC3;
   --navy-pale:      #EAF0FA;
   --navy-pale-2:    #F4F7FD;
   --orange:         #F47920;
@@ -29,11 +29,11 @@
   --border:         #DDE3EE;
 
   /* Section accent colours — aligned with Scouts Australia uniform trim */
-  --section-joey:       #D97706;   /* amber/tan — Joey uniform trim */
-  --section-cubs:       #D4A017;   /* golden yellow — Cubs uniform trim */
-  --section-scouts:     #1F7A4A;   /* forest green — Scouts uniform trim */
-  --section-venturers:  #7B1F5A;   /* burgundy — Venturers uniform trim */
-  --section-rovers:     #B01020;   /* deep red — Rovers uniform trim */
+  --section-joey:       #B65518;   /* official Scouts VIC Joey orange */
+  --section-cubs:       #C89010;   /* official Scouts VIC Cubs gold */
+  --section-scouts:     #00AE42;   /* official Scouts VIC Scouts green */
+  --section-venturers:  #9E1B32;   /* official Scouts VIC Venturers red */
+  --section-rovers:     #DC1B32;   /* official Scouts VIC Rovers red */
 
   /* Section pale tints for card backgrounds */
   --joey-pale:      #FEF3E0;
@@ -76,7 +76,7 @@
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; max-width: 100%; }
 
 body {
   font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -84,6 +84,7 @@ body {
   background: var(--white);
   line-height: 1.7;
   overflow-x: hidden;
+  max-width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -113,8 +114,11 @@ strong { color: var(--text-dark); }
 /* ============================================================
    UTILITIES
    ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
 .container {
   max-width: var(--max-width);
+  width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -241,6 +245,8 @@ strong { color: var(--text-dark); }
   z-index: 900;
   box-shadow: 0 2px 20px rgba(0,32,96,0.3);
   height: var(--header-h);
+  width: 100%;
+  overflow: hidden;
 }
 
 .header-inner {
@@ -327,6 +333,27 @@ strong { color: var(--text-dark); }
   height: 2px;
   background: var(--orange);
   border-radius: 2px;
+}
+
+/* Scouts VIC official logo badge in header */
+.vic-header-badge {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: 0.75rem;
+  opacity: 0.92;
+  transition: opacity var(--transition);
+}
+.vic-header-badge:hover { opacity: 1; }
+.vic-header-badge img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 900px) {
+  .vic-header-badge { display: none; }
 }
 
 .nav-join-btn {
@@ -450,6 +477,20 @@ strong { color: var(--text-dark); }
   overflow: hidden;
 }
 
+/* Scouts Victoria gumtree silhouette background */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('images/gumtree-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  opacity: 0.10;
+  pointer-events: none;
+  z-index: 0;
+}
+
 /* Subtle radial glow behind hero content */
 .hero::before {
   content: '';
@@ -459,7 +500,7 @@ strong { color: var(--text-dark); }
   transform: translateX(-50%);
   width: 800px;
   height: 600px;
-  background: radial-gradient(ellipse, rgba(0,80,179,0.35) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0,123,195,0.3) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -835,7 +876,7 @@ strong { color: var(--text-dark); }
   line-height: 1.5;
 }
 
-.adventure-card.sail  { background: linear-gradient(145deg, #002060 0%, #0050B3 100%); }
+.adventure-card.sail  { background: linear-gradient(145deg, #00335D 0%, #007BC3 100%); }
 .adventure-card.camp  { background: linear-gradient(145deg, #0D3318 0%, #1F7A4A 100%); }
 .adventure-card.adv   { background: linear-gradient(145deg, #3D1005 0%, #B83000 100%); }
 .adventure-card.reef  { background: linear-gradient(145deg, #003330 0%, #006655 100%); }
@@ -1688,7 +1729,7 @@ strong { color: var(--text-dark); }
    FOOTER
    ============================================================ */
 .site-footer {
-  background: #03163A;
+  background: #001D3D;
   color: rgba(255,255,255,0.7);
   padding: 5rem 0 0;
 }
@@ -1724,6 +1765,43 @@ strong { color: var(--text-dark); }
   margin-bottom: 1.5rem;
   max-width: 280px;
   line-height: 1.7;
+}
+
+.footer-vic-affiliation {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.footer-vic-affiliation img {
+  height: 52px;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity var(--transition);
+}
+.footer-vic-affiliation img:hover { opacity: 1; }
+.footer-vic-affiliation span {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.5;
+  max-width: 160px;
+}
+
+/* Section logos in sections page */
+.section-logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin-bottom: 0.75rem;
+  opacity: 0.92;
+}
+.section-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
 .footer-col h4 {
