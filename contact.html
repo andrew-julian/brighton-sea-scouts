@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — 1st/14th Brighton Sea Scouts</title>
+  <meta name="description" content="Get in touch with 1st/14th Brighton Sea Scouts. Find our address, phone, email, section meeting times, and how to reach your section leader.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <a href="#">Child Safe Organisation</a> ·
+    <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> ·
+    <a href="https://shop.scoutsaustralia.com.au" target="_blank" rel="noopener">Scout Shop</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="logo.svg" alt="1st/14th Brighton Sea Scouts emblem">
+        <div class="logo-text">
+          <span class="group-name">1st/14th Brighton</span>
+          <span class="group-sub">Sea Scouts · Since 1908</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="sections.html">Age Sections</a>
+        <a href="activities.html">Activities</a>
+        <a href="join.html">How to Join</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="join.html" class="nav-join-btn">Join Free →</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="nav-overlay" onclick="closeMenu()"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="sections.html">👦 Age Sections</a>
+    <a href="activities.html">🏕️ Activities</a>
+    <a href="join.html">📋 How to Join</a>
+    <a href="contact.html" class="active">📞 Contact</a>
+    <a href="join.html" class="nav-join-btn">Try 3 Nights FREE →</a>
+  </nav>
+
+  <div class="orange-stripe"></div>
+
+  <!-- =============================================
+       PAGE HERO (compact)
+       ============================================= -->
+  <section class="page-hero" style="background: linear-gradient(135deg, var(--navy) 0%, #0e2d6b 100%); padding: 4rem 0 3rem; text-align:center; color:#fff;">
+    <div class="container">
+      <p class="section-badge" style="display:inline-block; margin-bottom:1rem;">📞 Get in Touch</p>
+      <h1 style="font-size:clamp(2rem,5vw,3rem); margin-bottom:1rem;">Contact Us</h1>
+      <p style="font-size:1.15rem; opacity:.88; max-width:620px; margin:0 auto;">
+        Whether you're thinking about joining, have a question about your section, or want to volunteer — we'd love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <!-- =============================================
+       MAIN CONTACT DETAILS
+       ============================================= -->
+  <section class="section" style="padding-top:3.5rem;">
+    <div class="container">
+      <div class="grid grid-3" style="gap:2rem; margin-bottom:3rem;">
+
+        <!-- Address -->
+        <div class="card card-body" style="text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:.75rem;">📍</div>
+          <h3 style="margin-bottom:.5rem;">Scout Hall</h3>
+          <p style="color:var(--text-light); margin-bottom:1rem;">
+            34 Wilson Street<br>
+            Brighton VIC 3186
+          </p>
+          <a href="https://maps.google.com/?q=34+Wilson+Street+Brighton+VIC+3186" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.9rem;">Open in Maps →</a>
+        </div>
+
+        <!-- Phone / Email -->
+        <div class="card card-body" style="text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:.75rem;">✉️</div>
+          <h3 style="margin-bottom:.5rem;">Group Leader</h3>
+          <p style="color:var(--text-light); margin-bottom:.5rem;"><strong>Janet Cardell</strong></p>
+          <p style="margin-bottom:.5rem;">
+            <a href="tel:0419893739" style="color:var(--navy); font-weight:600;">0419 893 739</a>
+          </p>
+          <p style="margin-bottom:1rem;">
+            <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au" style="color:var(--navy); font-weight:600; word-break:break-all; font-size:.88rem;">gl.brighton1st-14th@<wbr>scoutsvictoria.com.au</a>
+          </p>
+          <p style="color:var(--text-light); font-size:.88rem;">Best for joining enquiries &amp; general questions</p>
+        </div>
+
+        <!-- Meeting Nights -->
+        <div class="card card-body" style="text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:.75rem;">📅</div>
+          <h3 style="margin-bottom:.5rem;">Meeting Nights</h3>
+          <p style="color:var(--text-light); font-size:.9rem; margin-bottom:1rem;">All sections meet during the Victorian school term at our hall on Wilson Street.</p>
+          <table style="width:100%; font-size:.88rem; border-collapse:collapse; text-align:left;">
+            <tr style="border-bottom:1px solid #e5e7eb;">
+              <td style="padding:.35rem .5rem; color:var(--text-light);">Joeys</td>
+              <td style="padding:.35rem .5rem; font-weight:600;">Tuesday 6:30–7:30 pm</td>
+            </tr>
+            <tr style="border-bottom:1px solid #e5e7eb;">
+              <td style="padding:.35rem .5rem; color:var(--text-light);">Cubs</td>
+              <td style="padding:.35rem .5rem; font-weight:600;">Wednesday 7:00–8:30 pm</td>
+            </tr>
+            <tr style="border-bottom:1px solid #e5e7eb;">
+              <td style="padding:.35rem .5rem; color:var(--text-light);">Scouts</td>
+              <td style="padding:.35rem .5rem; font-weight:600;">Thursday 7:00–9:00 pm</td>
+            </tr>
+            <tr style="border-bottom:1px solid #e5e7eb;">
+              <td style="padding:.35rem .5rem; color:var(--text-light);">Venturers</td>
+              <td style="padding:.35rem .5rem; font-weight:600;">Friday 7:30–9:30 pm</td>
+            </tr>
+            <tr>
+              <td style="padding:.35rem .5rem; color:var(--text-light);">Rovers</td>
+              <td style="padding:.35rem .5rem; font-weight:600;">Monday 7:00–9:00 pm</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       MAP EMBED
+       ============================================= -->
+  <section style="background:var(--bg-alt); padding:0;">
+    <div style="width:100%; height:380px; position:relative; overflow:hidden;">
+      <iframe
+        title="1st/14th Brighton Sea Scouts map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.5!2d144.9997!3d-37.9097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s34+Wilson+Street%2C+Brighton+VIC+3186!5e0!3m2!1sen!2sau!4v1"
+        style="width:100%; height:100%; border:0; filter:grayscale(10%);"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SECTION LEADERS
+       ============================================= -->
+  <section class="section" style="padding-top:3.5rem;">
+    <div class="container">
+      <div class="section-header" style="text-align:center; margin-bottom:2.5rem;">
+        <p class="section-badge">Our Leaders</p>
+        <h2>Reach Your Section Leader</h2>
+        <p class="section-intro">Each section has dedicated volunteer leaders. If you have a section-specific question, reach out directly — or contact the Group Leader who can connect you.</p>
+      </div>
+
+      <div class="grid grid-3" style="gap:1.5rem;">
+
+        <!-- Joeys -->
+        <div class="card card-body">
+          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem;">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center; font-size:1.5rem; flex-shrink:0;">🐨</div>
+            <div>
+              <h4 style="margin:0; font-size:1rem;">Joey Scouts</h4>
+              <p style="margin:0; color:var(--text-light); font-size:.85rem;">Ages 5–7 · Tuesdays</p>
+            </div>
+          </div>
+          <p style="color:var(--text-light); font-size:.9rem; margin-bottom:.75rem;">For enquiries about our Joey Scout mob, contact Janet Cardell (Group Leader) who will connect you with the Joey Leader.</p>
+          <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au" class="btn btn-outline" style="font-size:.85rem; width:100%; text-align:center;">Email Group Leader</a>
+        </div>
+
+        <!-- Cubs -->
+        <div class="card card-body">
+          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem;">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center; font-size:1.5rem; flex-shrink:0;">🐺</div>
+            <div>
+              <h4 style="margin:0; font-size:1rem;">Cub Scouts</h4>
+              <p style="margin:0; color:var(--text-light); font-size:.85rem;">Ages 7–10 · Wednesdays</p>
+            </div>
+          </div>
+          <p style="color:var(--text-light); font-size:.9rem; margin-bottom:.75rem;">For enquiries about our Cub Scout pack, contact Janet Cardell (Group Leader) who will connect you with the Cub Leader.</p>
+          <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au" class="btn btn-outline" style="font-size:.85rem; width:100%; text-align:center;">Email Group Leader</a>
+        </div>
+
+        <!-- Scouts -->
+        <div class="card card-body">
+          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem;">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center; font-size:1.5rem; flex-shrink:0;">⚜️</div>
+            <div>
+              <h4 style="margin:0; font-size:1rem;">Scouts</h4>
+              <p style="margin:0; color:var(--text-light); font-size:.85rem;">Ages 10–14 · Thursdays</p>
+            </div>
+          </div>
+          <p style="color:var(--text-light); font-size:.9rem; margin-bottom:.75rem;">For enquiries about our Scout troop, contact Janet Cardell (Group Leader) who will connect you with the Scout Leader.</p>
+          <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au" class="btn btn-outline" style="font-size:.85rem; width:100%; text-align:center;">Email Group Leader</a>
+        </div>
+
+        <!-- Venturers -->
+        <div class="card card-body">
+          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem;">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center; font-size:1.5rem; flex-shrink:0;">🧭</div>
+            <div>
+              <h4 style="margin:0; font-size:1rem;">Venturer Scouts</h4>
+              <p style="margin:0; color:var(--text-light); font-size:.85rem;">Ages 14–17 · Fridays</p>
+            </div>
+          </div>
+          <p style="color:var(--text-light); font-size:.9rem; margin-bottom:.75rem;">For enquiries about our Venturer Scout unit, contact Janet Cardell (Group Leader) who will connect you with the Venturer Leader.</p>
+          <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au" class="btn btn-outline" style="font-size:.85rem; width:100%; text-align:center;">Email Group Leader</a>
+        </div>
+
+        <!-- Rovers -->
+        <div class="card card-body">
+          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem;">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center; font-size:1.5rem; flex-shrink:0;">⚓</div>
+            <div>
+              <h4 style="margin:0; font-size:1rem;">Rovers</h4>
+              <p style="margin:0; color:var(--text-light); font-size:.85rem;">Ages 17–26 · Fortnightly</p>
+            </div>
+          </div>
+          <p style="color:var(--text-light); font-size:.9rem; margin-bottom:.75rem;">For enquiries about joining our Rover crew, contact Janet Cardell (Group Leader) who will connect you with the Rover Advisor.</p>
+          <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au" class="btn btn-outline" style="font-size:.85rem; width:100%; text-align:center;">Email Group Leader</a>
+        </div>
+
+        <!-- Volunteering -->
+        <div class="card card-body" style="border:2px solid var(--orange);">
+          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem;">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--navy); display:flex; align-items:center; justify-content:center; font-size:1.5rem; flex-shrink:0;">🙋</div>
+            <div>
+              <h4 style="margin:0; font-size:1rem;">Volunteer / Help Out</h4>
+              <p style="margin:0; color:var(--text-light); font-size:.85rem;">Leaders, helpers &amp; committee</p>
+            </div>
+          </div>
+          <p style="color:var(--text-light); font-size:.9rem; margin-bottom:.75rem;">Interested in becoming a leader, helper, or joining our parent committee? We'd love to welcome you. No experience necessary — just enthusiasm!</p>
+          <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au?subject=Volunteering%20enquiry" class="btn btn-primary" style="font-size:.85rem; width:100%; text-align:center;">Get Involved →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ENQUIRY FORM
+       ============================================= -->
+  <section class="section" style="background:var(--bg-alt); padding:3.5rem 0;">
+    <div class="container">
+      <div style="max-width:680px; margin:0 auto;">
+        <div class="section-header" style="text-align:center; margin-bottom:2rem;">
+          <p class="section-badge">Send a Message</p>
+          <h2>Drop Us a Line</h2>
+          <p class="section-intro">Fill in the form below and our Group Leader will get back to you within 2 business days.</p>
+        </div>
+
+        <form class="card card-body" action="mailto:gl.brighton1st-14th@scoutsvictoria.com.au" method="get" enctype="text/plain" style="gap:0;">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-bottom:1.25rem;">
+            <div>
+              <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">First Name *</label>
+              <input type="text" name="firstname" required placeholder="e.g. Sarah" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
+            </div>
+            <div>
+              <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">Last Name *</label>
+              <input type="text" name="lastname" required placeholder="e.g. Smith" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
+            </div>
+          </div>
+
+          <div style="margin-bottom:1.25rem;">
+            <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">Email Address *</label>
+            <input type="email" name="email" required placeholder="e.g. sarah@example.com" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
+          </div>
+
+          <div style="margin-bottom:1.25rem;">
+            <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">Phone Number</label>
+            <input type="tel" name="phone" placeholder="e.g. 0400 123 456" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
+          </div>
+
+          <div style="margin-bottom:1.25rem;">
+            <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">I'm enquiring about… *</label>
+            <select name="subject" required style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box; background:#fff; appearance:auto;">
+              <option value="" disabled selected>Please select…</option>
+              <option>Joining — Joey Scouts (ages 5–7)</option>
+              <option>Joining — Cub Scouts (ages 7–10)</option>
+              <option>Joining — Scouts (ages 10–14)</option>
+              <option>Joining — Venturer Scouts (ages 14–17)</option>
+              <option>Joining — Rovers (ages 17–26)</option>
+              <option>Volunteering / Becoming a Leader</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:1.5rem;">
+            <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">Your Message *</label>
+            <textarea name="body" required rows="5" placeholder="Tell us a little about yourself and how we can help…" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box; resize:vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Send Enquiry →</button>
+          <p style="text-align:center; color:var(--text-light); font-size:.82rem; margin-top:.75rem; margin-bottom:0;">This will open your email client pre-filled with your message.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FAQ
+       ============================================= -->
+  <section class="section" style="background:var(--bg-alt); padding:3.5rem 0;">
+    <div class="container">
+      <div style="max-width:720px; margin:0 auto;">
+        <div class="section-header" style="text-align:center; margin-bottom:2rem;">
+          <p class="section-badge">FAQ</p>
+          <h2>Common Questions</h2>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:1rem;">
+
+          <details class="card card-body" style="cursor:pointer; user-select:none;">
+            <summary style="font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              How do I enrol my child? <span style="color:var(--orange); font-size:1.25rem;">+</span>
+            </summary>
+            <p style="margin:1rem 0 0; color:var(--text-light); line-height:1.7;">
+              Contact our Group Leader Janet Cardell by phone or email, or submit the enquiry form above. She'll arrange for your child to attend three free trial nights. If you'd like to proceed after the trial, enrolment is done online through Scouts Victoria's MyScout portal.
+            </p>
+          </details>
+
+          <details class="card card-body" style="cursor:pointer; user-select:none;">
+            <summary style="font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              What age can my child start? <span style="color:var(--orange); font-size:1.25rem;">+</span>
+            </summary>
+            <p style="margin:1rem 0 0; color:var(--text-light); line-height:1.7;">
+              Children can join Joey Scouts from age 5. The full programme runs through to age 26 across five sections: Joeys (5–7), Cubs (7–10), Scouts (10–14), Venturers (14–17), and Rovers (17–26).
+            </p>
+          </details>
+
+          <details class="card card-body" style="cursor:pointer; user-select:none;">
+            <summary style="font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              Are there waiting lists? <span style="color:var(--orange); font-size:1.25rem;">+</span>
+            </summary>
+            <p style="margin:1rem 0 0; color:var(--text-light); line-height:1.7;">
+              Waiting lists can apply, particularly for younger sections. Contact us to check current availability. We recommend enquiring early — Brighton is a popular group.
+            </p>
+          </details>
+
+          <details class="card card-body" style="cursor:pointer; user-select:none;">
+            <summary style="font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              What's the cost? <span style="color:var(--orange); font-size:1.25rem;">+</span>
+            </summary>
+            <p style="margin:1rem 0 0; color:var(--text-light); line-height:1.7;">
+              Scouts Victoria membership is approximately $350–$450 per year (billed twice annually). This covers insurance, badges, programme materials, and most weekly meeting activities. Camps and major activities have additional costs. Financial assistance is available — please ask Janet.
+            </p>
+          </details>
+
+          <details class="card card-body" style="cursor:pointer; user-select:none;">
+            <summary style="font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              How do I become a leader or volunteer? <span style="color:var(--orange); font-size:1.25rem;">+</span>
+            </summary>
+            <p style="margin:1rem 0 0; color:var(--text-light); line-height:1.7;">
+              We always welcome enthusiastic adults who want to make a difference. No prior Scouting experience is needed. Contact Janet and she'll walk you through our straightforward onboarding process, which includes a Working with Children Check and a Scouts Victoria induction.
+            </p>
+          </details>
+
+          <details class="card card-body" style="cursor:pointer; user-select:none;">
+            <summary style="font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+              Where are you located and how do I get there? <span style="color:var(--orange); font-size:1.25rem;">+</span>
+            </summary>
+            <p style="margin:1rem 0 0; color:var(--text-light); line-height:1.7;">
+              We're at 34 Wilson Street, Brighton VIC 3186. The hall is a short walk from North Brighton station (Sandringham line) and Bay Street. There is off-street parking on Wilson Street and surrounding streets.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SOCIAL / LINKS
+       ============================================= -->
+  <section class="section" style="padding:3rem 0; text-align:center;">
+    <div class="container">
+      <h3 style="margin-bottom:1.25rem;">Stay Connected</h3>
+      <p style="color:var(--text-light); margin-bottom:2rem; max-width:540px; margin-left:auto; margin-right:auto;">Follow our adventures and stay up to date with Group news via our social channels.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="https://www.facebook.com/brightonseascouts" target="_blank" rel="noopener" class="btn btn-outline" style="display:flex; align-items:center; gap:.5rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          Facebook
+        </a>
+        <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener" class="btn btn-outline">
+          Scouts Victoria
+        </a>
+        <a href="https://scouts.com.au" target="_blank" rel="noopener" class="btn btn-outline">
+          Scouts Australia
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       CTA STRIP
+       ============================================= -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to start the adventure?</h2>
+      <p>Three free trial nights, no commitment required. Your child's next chapter starts here.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="join.html" class="btn btn-orange btn-lg">Join Free — 3 Trial Nights</a>
+        <a href="sections.html" class="btn btn-outline-white btn-lg">Find Your Section</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="logo.svg" alt="1st/14th Brighton Sea Scouts">
+            <div class="logo-text">
+              <span class="group-name">1st/14th Brighton Sea Scouts</span>
+              <span class="group-sub">Since 1908</span>
+            </div>
+          </div>
+          <p class="footer-desc">Providing young people aged 5–25 with adventures, skills and friendships in Brighton, Victoria since 1908. Part of Scouts Australia — the world's largest youth organisation.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sections.html">Age Sections</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="join.html">How to Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Joining</h4>
+          <ul>
+            <li><a href="join.html">Try 3 Nights Free</a></li>
+            <li><a href="join.html#fees">Fees &amp; Membership</a></li>
+            <li><a href="join.html#uniform">Uniform Guide</a></li>
+            <li><a href="sections.html">Find Your Section</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <p>📍 34 Wilson Street, Brighton VIC 3186</p>
+          <p>📞 <a href="tel:0419893739">0419 893 739</a></p>
+          <p>✉️ <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au">Email the Group Leader</a></p>
+          <p>🔗 <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 1st/14th Brighton Sea Scouts. All rights reserved.</span>
+        <span>Part of <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> · <a href="https://scouts.com.au" target="_blank" rel="noopener">Scouts Australia</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(btn) {
+      const isOpen = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      document.querySelector('.mobile-nav').classList.toggle('open', isOpen);
+      document.querySelector('.nav-overlay').classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+    function closeMenu() {
+      document.querySelector('.hamburger').classList.remove('open');
+      document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+      document.querySelector('.mobile-nav').classList.remove('open');
+      document.querySelector('.nav-overlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    // Animate FAQ chevron on open/close
+    document.querySelectorAll('details').forEach(el => {
+      el.addEventListener('toggle', () => {
+        const icon = el.querySelector('summary span');
+        if (icon) icon.textContent = el.open ? '−' : '+';
+      });
+    });
+  </script>
+</body>
+</html>

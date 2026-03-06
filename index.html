@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1st/14th Brighton Sea Scouts — Adventure on Land and Sea</title>
+  <meta name="description" content="1st/14th Brighton Sea Scouts — offering young people aged 5–25 unforgettable adventures on land and sea since 1908. Serving the Brighton community in Melbourne, Victoria.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <a href="#">Child Safe Organisation</a> ·
+    <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> ·
+    <a href="https://shop.scoutsaustralia.com.au" target="_blank" rel="noopener">Scout Shop</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="logo.svg" alt="1st/14th Brighton Sea Scouts emblem">
+        <div class="logo-text">
+          <span class="group-name">1st/14th Brighton</span>
+          <span class="group-sub">Sea Scouts · Since 1908</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="sections.html">Age Sections</a>
+        <a href="activities.html">Activities</a>
+        <a href="join.html">How to Join</a>
+        <a href="contact.html">Contact</a>
+        <a href="join.html" class="nav-join-btn">Join Free →</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="nav-overlay" onclick="closeMenu()"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="active">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="sections.html">👦 Age Sections</a>
+    <a href="activities.html">🏕️ Activities</a>
+    <a href="join.html">📋 How to Join</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="join.html" class="nav-join-btn">Try 3 Nights FREE →</a>
+  </nav>
+
+  <div class="orange-stripe"></div>
+
+  <!-- =============================================
+       HERO
+       ============================================= -->
+  <section class="hero" style="min-height: 560px; display: flex; align-items: center;">
+    <div class="hero-pattern">
+      <!-- SVG silhouette pattern — left side -->
+      <svg class="pattern-left" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg" fill="#1A4A9E" aria-hidden="true">
+        <!-- Cyclist silhouette -->
+        <g transform="translate(20, 30)">
+          <circle cx="30" cy="12" r="8"/>
+          <path d="M22,20 L18,45 L35,45 L42,20Z"/>
+          <circle cx="12" cy="55" r="10" fill="none" stroke="#1A4A9E" stroke-width="3"/>
+          <circle cx="42" cy="55" r="10" fill="none" stroke="#1A4A9E" stroke-width="3"/>
+          <path d="M22,35 L12,50 M35,35 L42,50 M22,35 L42,35"/>
+        </g>
+        <!-- Hiker silhouette -->
+        <g transform="translate(15, 130)">
+          <circle cx="28" cy="10" r="9"/>
+          <path d="M20,22 L15,65 L28,60 L36,70 L40,22Z"/>
+          <path d="M20,40 L8,60 M40,40 L52,60"/>
+          <path d="M5,55 L15,65 L25,58"/>
+          <!-- backpack -->
+          <rect x="32" y="22" width="14" height="20" rx="3"/>
+        </g>
+        <!-- Climber on rope -->
+        <g transform="translate(40, 250)">
+          <line x1="20" y1="0" x2="20" y2="130" stroke="#1A4A9E" stroke-width="3"/>
+          <circle cx="20" cy="25" r="9"/>
+          <path d="M12,35 L8,65 L20,60 L32,65 L28,35Z"/>
+          <path d="M12,45 L0,55 M28,45 L40,55"/>
+          <path d="M8,62 L0,80 M32,62 L40,80"/>
+        </g>
+        <!-- Sailor at helm -->
+        <g transform="translate(10, 390)">
+          <circle cx="35" cy="10" r="9"/>
+          <path d="M27,22 L22,58 L35,55 L48,58 L43,22Z"/>
+          <path d="M27,35 L10,42 M43,35 L60,42"/>
+          <!-- wheel -->
+          <circle cx="35" cy="30" r="16" fill="none" stroke="#1A4A9E" stroke-width="3"/>
+          <line x1="35" y1="14" x2="35" y2="46"/>
+          <line x1="19" y1="30" x2="51" y2="30"/>
+          <line x1="24" y1="19" x2="46" y2="41"/>
+          <line x1="46" y1="19" x2="24" y2="41"/>
+        </g>
+      </svg>
+      <!-- Right side pattern -->
+      <svg class="pattern-right" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg" fill="#1A4A9E" aria-hidden="true">
+        <!-- Tent -->
+        <g transform="translate(30, 40)">
+          <path d="M10,80 L60,20 L110,80Z"/>
+          <path d="M35,80 L60,30 L85,80Z" fill="rgba(255,255,255,0.05)"/>
+          <line x1="10" y1="80" x2="110" y2="80" stroke="#1A4A9E" stroke-width="3"/>
+        </g>
+        <!-- Tree -->
+        <g transform="translate(80, 150)">
+          <polygon points="40,10 10,70 70,70"/>
+          <polygon points="40,35 15,85 65,85"/>
+          <rect x="33" y="85" width="14" height="25"/>
+        </g>
+        <!-- Canoe -->
+        <g transform="translate(10, 300)">
+          <path d="M5,30 Q50,10 110,30 Q50,50 5,30Z"/>
+          <line x1="57" y1="15" x2="57" y2="50" stroke="#1A4A9E" stroke-width="2"/>
+          <path d="M57,25 L75,35 L57,42"/>
+          <!-- paddler -->
+          <circle cx="50" cy="8" r="8"/>
+          <path d="M42,16 L38,30 L52,28 L62,30 L58,16Z"/>
+          <path d="M20,22 L38,28 M62,28 L80,22"/>
+        </g>
+        <!-- Stars/camp fire -->
+        <g transform="translate(50, 410)">
+          <path d="M30,0 L35,15 L50,15 L38,24 L42,39 L30,30 L18,39 L22,24 L10,15 L25,15Z" opacity="0.6"/>
+          <path d="M80,5 L83,14 L92,14 L85,20 L87,29 L80,24 L73,29 L75,20 L68,14 L77,14Z" opacity="0.4"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">🌊 Brighton, Victoria · Since 1908</span>
+        <h1>Adventure on land<br>and sea</h1>
+        <p class="hero-lead">1st/14th Brighton Sea Scouts gives young people aged 5–25 the skills, confidence and lifelong friendships that come from real adventure — sailing, camping, climbing and so much more.</p>
+        <div class="hero-cta">
+          <a href="join.html" class="btn btn-orange btn-lg">Try Scouts FREE →</a>
+          <a href="sections.html" class="btn btn-outline-white btn-lg">Find Your Section</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       AGE SECTIONS — Quick Overview
+       ============================================= -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">For ages 5–25</span>
+        <h2 class="section-title">A journey of up to 20 years</h2>
+        <p class="section-subtitle">Five age-based sections, each with their own unique program and adventures.</p>
+      </div>
+      <div class="age-cards">
+        <a href="sections.html#joeys" class="age-card joey" style="text-decoration:none;">
+          <div class="age-icon">🐨</div>
+          <div class="age-name">Joey Scouts</div>
+          <div class="age-range">Ages 5–8</div>
+          <div class="age-day">Tuesdays 6:30pm</div>
+        </a>
+        <a href="sections.html#cubs" class="age-card cubs" style="text-decoration:none;">
+          <div class="age-icon">🐻</div>
+          <div class="age-name">Cub Scouts</div>
+          <div class="age-range">Ages 8–11</div>
+          <div class="age-day">Wednesdays 7:00pm</div>
+        </a>
+        <a href="sections.html#scouts" class="age-card scouts" style="text-decoration:none;">
+          <div class="age-icon">⚜️</div>
+          <div class="age-name">Scouts</div>
+          <div class="age-range">Ages 11–15</div>
+          <div class="age-day">Thursdays 7:00pm</div>
+        </a>
+        <a href="sections.html#venturers" class="age-card venturers" style="text-decoration:none;">
+          <div class="age-icon">🧗</div>
+          <div class="age-name">Venturers</div>
+          <div class="age-range">Ages 15–18</div>
+          <div class="age-day">Fridays 7:30pm</div>
+        </a>
+        <a href="sections.html#rovers" class="age-card rovers" style="text-decoration:none;">
+          <div class="age-icon">⚓</div>
+          <div class="age-name">Rovers</div>
+          <div class="age-range">Ages 18–25</div>
+          <div class="age-day">Mondays 7:00pm</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       PREPARE FOR ADVENTURE GRID
+       ============================================= -->
+  <section class="section section-off-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">What we do</span>
+        <h2 class="section-title">Prepare for adventure</h2>
+        <p class="section-subtitle">From the waters of Port Phillip Bay to the mountains of Victoria, we do it all.</p>
+      </div>
+      <div class="adventure-grid">
+        <a href="activities.html#sailing" class="adventure-card sail" style="text-decoration:none;">
+          <div class="adv-icon">⛵</div>
+          <h3>Sailing &amp; Sea Skills</h3>
+          <p>Learn to sail on Port Phillip Bay. Sailing courses, power boating, kayaking and water activities — it's in our DNA as Sea Scouts.</p>
+        </a>
+        <a href="activities.html#camping" class="adventure-card camp" style="text-decoration:none;">
+          <div class="adv-icon">⛺</div>
+          <h3>Camping &amp; Outdoors</h3>
+          <p>Overnight camps, bushwalking, abseiling, rock climbing and navigation. We get outdoors every term, rain or shine.</p>
+        </a>
+        <a href="activities.html" class="adventure-card adv" style="text-decoration:none;">
+          <div class="adv-icon">🧗</div>
+          <h3>Action &amp; Adventure</h3>
+          <p>Mountain bike riding, caving, water skiing, rafting, skiing at Falls Creek — plus community service and leadership challenges.</p>
+        </a>
+        <a href="activities.html#reef" class="adventure-card reef" style="text-decoration:none;">
+          <div class="adv-icon">🪸</div>
+          <h3>Reef Environment Project</h3>
+          <p>Our Venturer Unit monitors Port Phillip Bay's reef ecosystem at Holloway Bend — real science, real impact, Commonwealth funded.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       STATS STRIP
+       ============================================= -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div>
+          <span class="stat-number">1908</span>
+          <div class="stat-label">Founded in Brighton</div>
+        </div>
+        <div>
+          <span class="stat-number">5+</span>
+          <div class="stat-label">Active Sections</div>
+        </div>
+        <div>
+          <span class="stat-number">100+</span>
+          <div class="stat-label">Young Members</div>
+        </div>
+        <div>
+          <span class="stat-number">20</span>
+          <div class="stat-label">Years of Adventure</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ANNUAL EVENTS
+       ============================================= -->
+  <section class="events-strip">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Annual highlights</span>
+        <h2 class="section-title">Something to look forward to</h2>
+        <p class="section-subtitle">Every year we run major events on top of the regular weekly program.</p>
+      </div>
+      <div class="events-grid">
+        <div class="event-card">
+          <div class="event-date">
+            <div class="month">Feb</div>
+            <div class="day">⛺</div>
+          </div>
+          <div class="event-info">
+            <h4>Joey Sleepover at the Hall</h4>
+            <p>An overnight adventure for our youngest members — a first camp in a safe, fun environment.</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-date">
+            <div class="month">Apr</div>
+            <div class="day">🌊</div>
+          </div>
+          <div class="event-info">
+            <h4>Rover Surf Camp — Anglesea</h4>
+            <p>Annual surf camp on the Great Ocean Road for the Surrey Thomas Rover Crew.</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-date">
+            <div class="month">Jun</div>
+            <div class="day">🍳</div>
+          </div>
+          <div class="event-info">
+            <h4>Master Chef Night</h4>
+            <p>Cubs compete in our popular annual cooking challenge — the results are always delicious!</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-date">
+            <div class="month">Aug</div>
+            <div class="day">🛒</div>
+          </div>
+          <div class="event-info">
+            <h4>District Billy Cart Derby</h4>
+            <p>Cubs build and race billy carts against other Packs in the Bayside District — engineering meets fun.</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-date">
+            <div class="month">Nov</div>
+            <div class="day">🏕️</div>
+          </div>
+          <div class="event-info">
+            <h4>Gilweroo — Scouts Camp</h4>
+            <p>Annual regional Scout camp held in November — patrol cooking, challenges and patrol spirit.</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-date">
+            <div class="month">Dec</div>
+            <div class="day">❄️</div>
+          </div>
+          <div class="event-info">
+            <h4>Falls Creek Ski Trip</h4>
+            <p>Rover Crew heads to Falls Creek for a week of skiing at our annual ski chalet trip.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       JOIN CTA STRIP
+       ============================================= -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to start the adventure?</h2>
+      <p>Try Scouting for free — 3 nights, no obligation, no fees. Just turn up and see if it's right for your family.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="join.html" class="btn btn-outline-white btn-lg">How to Join</a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="logo.svg" alt="1st/14th Brighton Sea Scouts">
+            <div class="logo-text">
+              <span class="group-name">1st/14th Brighton Sea Scouts</span>
+              <span class="group-sub">Since 1908</span>
+            </div>
+          </div>
+          <p class="footer-desc">Providing young people aged 5–25 with adventures, skills and friendships in Brighton, Victoria since 1908. Part of Scouts Australia — the world's largest youth organisation.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sections.html">Age Sections</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="join.html">How to Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="sections.html#joeys">Joey Scouts (5–8)</a></li>
+            <li><a href="sections.html#cubs">Cub Scouts (8–11)</a></li>
+            <li><a href="sections.html#scouts">Scouts (11–15)</a></li>
+            <li><a href="sections.html#venturers">Venturers (15–18)</a></li>
+            <li><a href="sections.html#rovers">Rovers (18–25)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <p>📍 34 Wilson Street, Brighton VIC 3186</p>
+          <p>📞 <a href="tel:0419893739">0419 893 739</a></p>
+          <p>✉️ <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au">Email the Group Leader</a></p>
+          <p>🔗 <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a></p>
+          <p>🔗 <a href="https://scouts.com.au" target="_blank" rel="noopener">Scouts Australia</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 1st/14th Brighton Sea Scouts. All rights reserved.</span>
+        <span>Part of <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> · <a href="https://scouts.com.au" target="_blank" rel="noopener">Scouts Australia</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(btn) {
+      const isOpen = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      document.querySelector('.mobile-nav').classList.toggle('open', isOpen);
+      document.querySelector('.nav-overlay').classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+    function closeMenu() {
+      document.querySelector('.hamburger').classList.remove('open');
+      document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+      document.querySelector('.mobile-nav').classList.remove('open');
+      document.querySelector('.nav-overlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  </script>
+</body>
+</html>

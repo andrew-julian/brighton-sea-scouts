@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities &amp; Program — 1st/14th Brighton Sea Scouts</title>
+  <meta name="description" content="Discover the activities and program at 1st/14th Brighton Sea Scouts — sailing, camping, climbing, the Reef Environment Project, and our Achievement Pathways.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <a href="#">Child Safe Organisation</a> ·
+    <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> ·
+    <a href="https://shop.scoutsaustralia.com.au" target="_blank" rel="noopener">Scout Shop</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="logo.svg" alt="1st/14th Brighton Sea Scouts emblem">
+        <div class="logo-text">
+          <span class="group-name">1st/14th Brighton</span>
+          <span class="group-sub">Sea Scouts · Since 1908</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="sections.html">Age Sections</a>
+        <a href="activities.html" class="active">Activities</a>
+        <a href="join.html">How to Join</a>
+        <a href="contact.html">Contact</a>
+        <a href="join.html" class="nav-join-btn">Join Free →</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" onclick="closeMenu()"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="sections.html">👦 Age Sections</a>
+    <a href="activities.html" class="active">🏕️ Activities</a>
+    <a href="join.html">📋 How to Join</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="join.html" class="nav-join-btn">Try 3 Nights FREE →</a>
+  </nav>
+
+  <div class="orange-stripe"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-pattern">
+      <svg class="pattern-left" viewBox="0 0 280 420" xmlns="http://www.w3.org/2000/svg" fill="#1A4A9E" opacity="0.12" aria-hidden="true">
+        <!-- Sailboat -->
+        <g transform="translate(30, 80)">
+          <line x1="40" y1="0" x2="40" y2="100" stroke="#1A4A9E" stroke-width="4"/>
+          <path d="M40,5 L40,80 L90,80Z"/>
+          <path d="M40,30 L40,80 L0,80Z"/>
+          <path d="M15,80 Q40,95 85,82 Q40,100 15,80Z"/>
+        </g>
+        <!-- Mountain/abseiling -->
+        <g transform="translate(10, 240)">
+          <path d="M10,120 L55,20 L100,120Z"/>
+          <line x1="55" y1="20" x2="55" y2="150" stroke="#1A4A9E" stroke-width="2"/>
+          <circle cx="55" cy="55" r="8"/>
+          <path d="M48,62 L42,85 L55,80 L65,85 L60,62Z"/>
+        </g>
+      </svg>
+    </div>
+    <div class="container" style="position:relative; z-index:2;">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Activities &amp; Program</span>
+      </div>
+      <h1>Activities &amp; Program</h1>
+      <p>From sailing Port Phillip Bay to monitoring reef ecosystems — our program is built around real adventure and real achievement.</p>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ACHIEVEMENT PATHWAYS
+       ============================================= -->
+  <section class="section section-white" id="pathways">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">How we learn</span>
+        <h2 class="section-title">Achievement Pathways</h2>
+        <p class="section-subtitle">The Scout program is structured around five interconnected pathways that develop the whole person.</p>
+      </div>
+      <div class="pathway-grid">
+        <div class="pathway-card">
+          <div class="pathway-icon">📘</div>
+          <h4>Program Essentials</h4>
+          <p style="font-size:.82rem; color:var(--text-light); margin-top:.5rem;">Core skills and values that all Scouts develop, forming the foundation of the program.</p>
+        </div>
+        <div class="pathway-card">
+          <div class="pathway-icon">🏔️</div>
+          <h4>Outdoor Adventure Skills</h4>
+          <p style="font-size:.82rem; color:var(--text-light); margin-top:.5rem;">Practical skills across bushcraft, navigation, paddling, climbing and more — across nine progressive stages.</p>
+        </div>
+        <div class="pathway-card">
+          <div class="pathway-icon">🎯</div>
+          <h4>Special Interest Areas</h4>
+          <p style="font-size:.82rem; color:var(--text-light); margin-top:.5rem;">Six themed areas letting Scouts pursue passion projects and develop expertise in chosen fields.</p>
+        </div>
+        <div class="pathway-card">
+          <div class="pathway-icon">🥇</div>
+          <h4>Peak Awards</h4>
+          <p style="font-size:.82rem; color:var(--text-light); margin-top:.5rem;">The pinnacle achievement for each section — from the Promise Challenge through to the Queen's Scout and Baden-Powell Awards.</p>
+        </div>
+        <div class="pathway-card">
+          <div class="pathway-icon">⭐</div>
+          <h4>Additional Awards</h4>
+          <p style="font-size:.82rem; color:var(--text-light); margin-top:.5rem;">Extra recognition for specific achievements including community service, leadership and specialised skills.</p>
+        </div>
+      </div>
+
+      <!-- Outdoor Adventure Skills detail -->
+      <div style="margin-top:2rem;">
+        <h3 style="margin-bottom:1.25rem;">Outdoor Adventure Skills</h3>
+        <p style="max-width:700px; margin-bottom:1.5rem; color:var(--text-light);">Our Outdoor Adventure Skills (OAS) program covers nine key skill areas, each with progressive stages from beginner to expert. Members earn recognition as they develop competence and confidence in real-world outdoor environments.</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(180px, 1fr)); gap:.75rem;">
+          <div class="activity-pill">🧭 Bushcraft</div>
+          <div class="activity-pill">🗺️ Navigation</div>
+          <div class="activity-pill">🛶 Paddling</div>
+          <div class="activity-pill">🧗 Vertical (Climbing)</div>
+          <div class="activity-pill">⛵ Aquatics/Sailing</div>
+          <div class="activity-pill">🚵 Alpine/Skiing</div>
+          <div class="activity-pill">🏕️ Camping</div>
+          <div class="activity-pill">🔥 Pioneer Skills</div>
+          <div class="activity-pill">🌊 Boating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SPECIAL INTEREST AREAS
+       ============================================= -->
+  <section class="section section-pale" id="sia">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Passion-driven learning</span>
+        <h2 class="section-title">Special Interest Areas</h2>
+        <p class="section-subtitle">Six themed areas let young people explore what they love and make a real difference.</p>
+      </div>
+      <div class="sia-grid">
+        <div class="sia-card">
+          <div class="sia-icon">🏄</div>
+          <div>
+            <h4>Adventure &amp; Sport</h4>
+            <p>Surfing, skiing, rock climbing, orienteering, extreme sports and physical challenges that push boundaries.</p>
+          </div>
+        </div>
+        <div class="sia-card">
+          <div class="sia-icon">🌍</div>
+          <div>
+            <h4>Creating a Better World</h4>
+            <p>Community service, volunteering, social justice projects and actions that make a lasting positive impact.</p>
+          </div>
+        </div>
+        <div class="sia-card">
+          <div class="sia-icon">🧠</div>
+          <div>
+            <h4>Growth &amp; Development</h4>
+            <p>Leadership skills, personal resilience, emotional intelligence, health and wellbeing.</p>
+          </div>
+        </div>
+        <div class="sia-card">
+          <div class="sia-icon">🎨</div>
+          <div>
+            <h4>Arts &amp; Literature</h4>
+            <p>Music, drama, visual arts, writing, photography, film-making and creative expression in all forms.</p>
+          </div>
+        </div>
+        <div class="sia-card">
+          <div class="sia-icon">🌿</div>
+          <div>
+            <h4>Environment</h4>
+            <p>Conservation, sustainability, citizen science and environmental monitoring — like our own Reef Project.</p>
+          </div>
+        </div>
+        <div class="sia-card">
+          <div class="sia-icon">🔬</div>
+          <div>
+            <h4>STEM &amp; Innovation</h4>
+            <p>Science experiments, engineering challenges, coding, robotics, innovation and technology projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ACTIVITIES LIST
+       ============================================= -->
+  <section class="section section-white" id="sailing">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">What we do</span>
+        <h2 class="section-title">Our Activities</h2>
+        <p class="section-subtitle">A snapshot of the activities our members enjoy across all sections throughout the year.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:.85rem; margin-bottom:3rem;">
+        <div class="activity-pill">⛵ Sailing</div>
+        <div class="activity-pill">🧗 Abseiling</div>
+        <div class="activity-pill">🚵 Mountain Bike Riding</div>
+        <div class="activity-pill">🥾 Bushwalking</div>
+        <div class="activity-pill">⛺ Camping</div>
+        <div class="activity-pill">🛶 Canoeing</div>
+        <div class="activity-pill">🏗️ Construction</div>
+        <div class="activity-pill">🚣 Rafting</div>
+        <div class="activity-pill">🧗 Rock Climbing</div>
+        <div class="activity-pill">🌊 Water Skiing</div>
+        <div class="activity-pill">🕳️ Caving</div>
+        <div class="activity-pill">⛷️ Skiing</div>
+        <div class="activity-pill">🚤 Power Boating</div>
+        <div class="activity-pill">🛶 Kayaking</div>
+        <div class="activity-pill">🌿 Environmental Science</div>
+        <div class="activity-pill">🧭 Navigation/Orienteering</div>
+        <div class="activity-pill">🔭 Geocaching</div>
+        <div class="activity-pill">🍳 Outdoor Cooking</div>
+        <div class="activity-pill">🤝 Community Service</div>
+        <div class="activity-pill">🎭 Drama &amp; Arts</div>
+        <div class="activity-pill">🔬 Citizen Science</div>
+        <div class="activity-pill">🎪 Annual Events</div>
+      </div>
+
+      <div class="info-box">
+        <h4>🌊 Sea Scouts — Water Skills at the Core</h4>
+        <p style="margin:0;">As a <strong>Sea Scout group</strong>, water-based activities are central to our program. From learning to sail in a dinghy to completing RYA powerboat certification, our proximity to Port Phillip Bay gives us opportunities that most Scout groups can only dream of. Sailing courses are offered to Scouts, Venturers and Rovers throughout the year.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       REEF ENVIRONMENT PROJECT
+       ============================================= -->
+  <section class="section section-off-white" id="reef">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Environmental leadership</span>
+        <h2 class="section-title">Reef Environment Project</h2>
+        <p class="section-subtitle">Real science. Real impact. Our Venturers are making a measurable difference to Port Phillip Bay.</p>
+      </div>
+
+      <div class="reef-callout">
+        <div>
+          <h3>🪸 Monitoring the Bay's Reef Ecosystem</h3>
+          <p>Our Venturer Unit leads an ongoing environmental monitoring program at <strong>Holloway Bend</strong> on Port Phillip Bay — one of Victoria's significant but understudied reef environments. This is serious citizen science undertaken by young people aged 15–18.</p>
+          <p>The project involves regular dive surveys and surface monitoring to track the health of the reef ecosystem, with particular focus on the growing threat of <strong>microplastic pollution</strong>. Our data contributes to broader scientific research on the health of Port Phillip Bay.</p>
+          <p>The project is <strong>Commonwealth funded</strong> — recognition of its scientific value and the quality of the work our young members produce.</p>
+          <p>For Venturers, this project satisfies multiple Special Interest Area requirements (Environment, STEM, Creating a Better World) and contributes towards the Queen's Scout Award.</p>
+          <a href="join.html" class="btn btn-orange" style="margin-top:.5rem;">Join the Reef Project →</a>
+        </div>
+        <div class="reef-stats">
+          <div class="reef-stat">
+            <div class="rs-number">Port Phillip Bay</div>
+            <div class="rs-label">Monitoring location</div>
+          </div>
+          <div class="reef-stat">
+            <div class="rs-number">Holloway Bend</div>
+            <div class="rs-label">Primary survey site</div>
+          </div>
+          <div class="reef-stat">
+            <div class="rs-number">Commonwealth</div>
+            <div class="rs-label">Funded project</div>
+          </div>
+          <div class="reef-stat">
+            <div class="rs-number">Microplastics</div>
+            <div class="rs-label">Key research focus</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ANNUAL EVENTS CALENDAR
+       ============================================= -->
+  <section class="section section-white" id="camping">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">The annual calendar</span>
+        <h2 class="section-title">Major Annual Events</h2>
+        <p class="section-subtitle">In addition to weekly meetings, each section runs major events throughout the year.</p>
+      </div>
+
+      <div class="calendar-list">
+        <div class="calendar-event">
+          <div class="cal-month">Feb</div>
+          <div>
+            <div class="cal-event-name">Joey Sleepover at the Hall</div>
+            <div class="cal-event-detail">First overnight camp experience for our youngest members, held at the Scout Hall in a safe, familiar environment.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#F3E8FF; color:#6B21A8;">Joeys</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Mar</div>
+          <div>
+            <div class="cal-event-name">Reef Environment Project Monitoring Survey</div>
+            <div class="cal-event-detail">Quarterly underwater and surface monitoring survey at Holloway Bend, Port Phillip Bay.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#FEE2E2; color:#991B1B;">Venturers</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Apr</div>
+          <div>
+            <div class="cal-event-name">Rover Surf Camp — Anglesea</div>
+            <div class="cal-event-detail">Annual surf camp on the Great Ocean Road. Surfing, beach activities and great camaraderie.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#DBEAFE; color:#1E40AF;">Rovers</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Apr</div>
+          <div>
+            <div class="cal-event-name">Easter Hiking Trip</div>
+            <div class="cal-event-detail">Multi-day hiking adventure for the Rover Crew over the Easter long weekend.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#DBEAFE; color:#1E40AF;">Rovers</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Jun</div>
+          <div>
+            <div class="cal-event-name">Master Chef Night</div>
+            <div class="cal-event-detail">Cubs divide into teams and compete to design, cook and present the best meal. Always delicious, always chaotic.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#FEF3C7; color:#92400E;">Cubs</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Aug</div>
+          <div>
+            <div class="cal-event-name">District Billy Cart Derby</div>
+            <div class="cal-event-detail">Cubs build and race their billy carts against other Packs across the Bayside District — engineering meets competition.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#FEF3C7; color:#92400E;">Cubs</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Oct</div>
+          <div>
+            <div class="cal-event-name">Mud Bash</div>
+            <div class="cal-event-detail">The Rover Crew's annual outdoor adventure event featuring a healthy disregard for staying clean.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#DBEAFE; color:#1E40AF;">Rovers</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Nov</div>
+          <div>
+            <div class="cal-event-name">Gilweroo — Regional Scout Camp</div>
+            <div class="cal-event-detail">Annual regional Scout camping and skills competition. Patrols compete in a range of outdoor and leadership challenges.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#D1FAE5; color:#064E3B;">Scouts</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Nov</div>
+          <div>
+            <div class="cal-event-name">Possum &amp; Owl Spotting at Lennox Park</div>
+            <div class="cal-event-detail">Joey Scouts explore local wildlife after dark — spotlighting for possums and owls in Lennox Park.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#F3E8FF; color:#6B21A8;">Joeys</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Dec</div>
+          <div>
+            <div class="cal-event-name">Falls Creek Ski Trip</div>
+            <div class="cal-event-detail">Annual ski trip for the Rover Crew — the group's chalet at Falls Creek makes this a much-anticipated annual highlight.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#DBEAFE; color:#1E40AF;">Rovers</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">Biennial</div>
+          <div>
+            <div class="cal-event-name">Kangaree — Joey Scout Statewide Sleepover</div>
+            <div class="cal-event-detail">Every two years, thousands of Joey Scouts from across Victoria come together for a massive overnight sleepover event.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#F3E8FF; color:#6B21A8;">Joeys</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">3-Yearly</div>
+          <div>
+            <div class="cal-event-name">Cuboree — Gilwell Park, Gembrook</div>
+            <div class="cal-event-detail">Every 3 years, our Cubs join thousands of others for 5 days at Gilwell Park — the ultimate Cub Scout experience.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#FEF3C7; color:#92400E;">Cubs</span>
+        </div>
+        <div class="calendar-event">
+          <div class="cal-month">2025</div>
+          <div>
+            <div class="cal-event-name">AJ2025 — Australian Jamboree, Maryborough QLD</div>
+            <div class="cal-event-detail">The national Scout Jamboree — Scouts from across Australia and the world gather in Maryborough, Queensland.</div>
+          </div>
+          <span class="cal-section-tag" style="background:#D1FAE5; color:#064E3B;">Scouts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to dive in?</h2>
+      <p>Try any section for free — 3 nights, no obligation. Real adventures, real skills, real friends.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="join.html" class="btn btn-outline-white btn-lg">How to Join →</a>
+        <a href="sections.html" class="btn btn-outline-white btn-lg">Find Your Section</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="logo.svg" alt="1st/14th Brighton Sea Scouts">
+            <div class="logo-text">
+              <span class="group-name">1st/14th Brighton Sea Scouts</span>
+              <span class="group-sub">Since 1908</span>
+            </div>
+          </div>
+          <p class="footer-desc">Providing young people aged 5–25 with adventures, skills and friendships in Brighton, Victoria since 1908. Part of Scouts Australia — the world's largest youth organisation.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sections.html">Age Sections</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="join.html">How to Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Activities</h4>
+          <ul>
+            <li><a href="#pathways">Achievement Pathways</a></li>
+            <li><a href="#sia">Special Interest Areas</a></li>
+            <li><a href="#reef">Reef Project</a></li>
+            <li><a href="#sailing">Sailing &amp; Water Skills</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <p>📍 34 Wilson Street, Brighton VIC 3186</p>
+          <p>📞 <a href="tel:0419893739">0419 893 739</a></p>
+          <p>✉️ <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au">Email the Group Leader</a></p>
+          <p>🔗 <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 1st/14th Brighton Sea Scouts. All rights reserved.</span>
+        <span>Part of <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> · <a href="https://scouts.com.au" target="_blank" rel="noopener">Scouts Australia</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(btn) {
+      const isOpen = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      document.querySelector('.mobile-nav').classList.toggle('open', isOpen);
+      document.querySelector('.nav-overlay').classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+    function closeMenu() {
+      document.querySelector('.hamburger').classList.remove('open');
+      document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+      document.querySelector('.mobile-nav').classList.remove('open');
+      document.querySelector('.nav-overlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  </script>
+</body>
+</html>

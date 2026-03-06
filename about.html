@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — 1st/14th Brighton Sea Scouts</title>
+  <meta name="description" content="Learn about 1st/14th Brighton Sea Scouts — our history since 1908, our leadership team, our hall at 34 Wilson Street, and how to volunteer.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <a href="#">Child Safe Organisation</a> ·
+    <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> ·
+    <a href="https://shop.scoutsaustralia.com.au" target="_blank" rel="noopener">Scout Shop</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="logo.svg" alt="1st/14th Brighton Sea Scouts emblem">
+        <div class="logo-text">
+          <span class="group-name">1st/14th Brighton</span>
+          <span class="group-sub">Sea Scouts · Since 1908</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="sections.html">Age Sections</a>
+        <a href="activities.html">Activities</a>
+        <a href="join.html">How to Join</a>
+        <a href="contact.html">Contact</a>
+        <a href="join.html" class="nav-join-btn">Join Free →</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" onclick="closeMenu()"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html" class="active">ℹ️ About Us</a>
+    <a href="sections.html">👦 Age Sections</a>
+    <a href="activities.html">🏕️ Activities</a>
+    <a href="join.html">📋 How to Join</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="join.html" class="nav-join-btn">Try 3 Nights FREE →</a>
+  </nav>
+
+  <div class="orange-stripe"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-pattern">
+      <svg class="pattern-left" viewBox="0 0 280 420" xmlns="http://www.w3.org/2000/svg" fill="#1A4A9E" opacity="0.12" aria-hidden="true">
+        <path d="M30,200 Q50,180 80,190 Q110,200 120,220 Q110,240 80,235 Q50,230 30,200Z"/>
+        <rect x="55" y="140" width="10" height="80"/>
+        <path d="M60,145 L60,175 L95,160Z"/>
+        <circle cx="140" cy="80" r="30" fill="none" stroke="#1A4A9E" stroke-width="4"/>
+        <path d="M110,80 L170,80 M140,50 L140,110 M120,60 L160,100 M160,60 L120,100"/>
+      </svg>
+    </div>
+    <div class="container" style="position:relative; z-index:2;">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>About Us</span>
+      </div>
+      <h1>About Us</h1>
+      <p>Over a century of adventure, community and character-building in Brighton, Victoria.</p>
+    </div>
+  </section>
+
+  <!-- =============================================
+       OUR HISTORY
+       ============================================= -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Est. 1908</span>
+          <h2>A legacy of adventure</h2>
+          <p>1st/14th Brighton Sea Scouts has been a cornerstone of the Brighton community since <strong>1908</strong> — making us one of the longest-running Scout Groups in Victoria. Over more than a century, thousands of young people have passed through our doors, gained confidence, learned real-world skills, and formed lifelong friendships.</p>
+          <p>We are proudly part of <strong>Scouts Australia</strong>, the world's largest youth organisation, and operate under the guidance of <strong>Scouts Victoria</strong> within the <strong>Bayside District</strong>. Our "Sea Scouts" heritage means we have always had a special connection to the water — sailing, kayaking, power boating and environmental stewardship on Port Phillip Bay are central to what we do.</p>
+          <p>Today we serve around <strong>100+ young people</strong> aged 5 to 25 across five active sections, supported by a dedicated team of adult volunteers and a committed parent committee.</p>
+        </div>
+        <div>
+          <div class="card" style="background: var(--navy); color: white; padding: 2rem;">
+            <h3 style="color:var(--orange); margin-bottom:1rem;">What makes us different</h3>
+            <ul style="list-style:none; padding:0;">
+              <li style="padding:.6rem 0; border-bottom:1px solid rgba(255,255,255,0.1); display:flex; gap:.75rem; align-items:flex-start;">
+                <span style="color:var(--orange); font-size:1.1rem; flex-shrink:0;">⛵</span>
+                <span><strong style="color:white;">Sea Scouts heritage</strong> — sailing and water skills are in our DNA</span>
+              </li>
+              <li style="padding:.6rem 0; border-bottom:1px solid rgba(255,255,255,0.1); display:flex; gap:.75rem; align-items:flex-start;">
+                <span style="color:var(--orange); font-size:1.1rem; flex-shrink:0;">🌿</span>
+                <span><strong style="color:white;">Environmental leadership</strong> — our Reef Project makes a real difference</span>
+              </li>
+              <li style="padding:.6rem 0; border-bottom:1px solid rgba(255,255,255,0.1); display:flex; gap:.75rem; align-items:flex-start;">
+                <span style="color:var(--orange); font-size:1.1rem; flex-shrink:0;">🤝</span>
+                <span><strong style="color:white;">Inclusive community</strong> — all genders, all abilities, no prior experience needed</span>
+              </li>
+              <li style="padding:.6rem 0; border-bottom:1px solid rgba(255,255,255,0.1); display:flex; gap:.75rem; align-items:flex-start;">
+                <span style="color:var(--orange); font-size:1.1rem; flex-shrink:0;">🏆</span>
+                <span><strong style="color:white;">Youth-led program</strong> — young people drive their own adventures</span>
+              </li>
+              <li style="padding:.6rem 0; display:flex; gap:.75rem; align-items:flex-start;">
+                <span style="color:var(--orange); font-size:1.1rem; flex-shrink:0;">📍</span>
+                <span><strong style="color:white;">Central Brighton location</strong> — our hall at 34 Wilson Street</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       OUR VALUES
+       ============================================= -->
+  <section class="section section-pale">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Who we are</span>
+        <h2 class="section-title">An inclusive, adventurous community</h2>
+        <p class="section-subtitle">Scouting is for everyone. We welcome young people of all backgrounds, abilities, and identities.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card card-body" style="text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🌍</div>
+          <h3 style="margin-bottom:.75rem;">Open to All</h3>
+          <p style="color:var(--text-light); margin:0;">All genders are welcome across every section. No prior Scouting experience is required to join Venturers or Rovers.</p>
+        </div>
+        <div class="card card-body" style="text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🛡️</div>
+          <h3 style="margin-bottom:.75rem;">Child Safe</h3>
+          <p style="color:var(--text-light); margin:0;">We are a registered Child Safe Organisation. All adult volunteers hold a current Working With Children Check and police clearance.</p>
+        </div>
+        <div class="card card-body" style="text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">💡</div>
+          <h3 style="margin-bottom:.75rem;">Skills for Life</h3>
+          <p style="color:var(--text-light); margin:0;">From leadership and teamwork to first aid and navigation — young people graduate Scouting with real, transferable skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       LEADERSHIP TEAM
+       ============================================= -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our people</span>
+        <h2 class="section-title">Leadership Team</h2>
+        <p class="section-subtitle" style="margin-bottom:0;">Our dedicated adult volunteers make every adventure possible.</p>
+      </div>
+
+      <table class="leadership-table">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Name</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="role-badge badge-leader">Group Leader</span>
+            </td>
+            <td>Janet Cardell</td>
+            <td><a href="tel:0419893739">0419 893 739</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-leader">Assistant Group Leader</span>
+            </td>
+            <td>Stuart Cardell</td>
+            <td><a href="tel:0412448420">0412 448 420</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-leader">Asst. Group Leader Training</span>
+            </td>
+            <td>Russell Burton</td>
+            <td><a href="tel:0417224467">0417 224 467</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-section" style="background:var(--section-joey);">Joey Scouts Leader</span>
+            </td>
+            <td>Ed Young</td>
+            <td><a href="tel:0417475677">0417 475 677</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-section" style="background:var(--section-joey);">Joey Scouts Leader</span>
+            </td>
+            <td>Ian Taylor</td>
+            <td><a href="tel:0401538332">0401 538 332</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-section" style="background:var(--section-cubs);">Cub Scout Leader</span>
+            </td>
+            <td>Craig Lyons</td>
+            <td><a href="tel:0438004703">0438 004 703</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-section" style="background:var(--section-scouts);">Scout Leader</span>
+            </td>
+            <td>Tony Cipriano</td>
+            <td><a href="tel:0408339061">0408 339 061</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-section" style="background:var(--section-venturers);">Venturer Leader</span>
+            </td>
+            <td>Murray McDonald</td>
+            <td><a href="tel:0425817022">0425 817 022</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-section" style="background:var(--section-rovers);">Rover Adviser</span>
+            </td>
+            <td>Darren Miller</td>
+            <td><a href="tel:0419313967">0419 313 967</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-section" style="background:var(--section-rovers);">Rover Crew Leader</span>
+            </td>
+            <td>Sam Lyons</td>
+            <td><a href="tel:0458330164">0458 330 164</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-committee">Parent Committee Chair</span>
+            </td>
+            <td>Lynne Pennington</td>
+            <td><a href="tel:0448480390">0448 480 390</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-committee">Treasurer</span>
+            </td>
+            <td>Leanne Sheehy</td>
+            <td><a href="tel:0406602111">0406 602 111</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="role-badge badge-committee">Secretary</span>
+            </td>
+            <td>Peta Hamill</td>
+            <td><a href="tel:0432901412">0432 901 412</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="info-box">
+        <h4>📋 For general enquiries</h4>
+        <p style="margin:0;">Contact our Group Leader <strong>Janet Cardell</strong> at <a href="tel:0419893739">0419 893 739</a> or email <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au">gl.brighton1st-14th@scoutsvictoria.com.au</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       BAYSIDE DISTRICT & PARENT COMMITTEE
+       ============================================= -->
+  <section class="section section-off-white">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Our district</span>
+          <h2>Bayside District</h2>
+          <p>1st/14th Brighton Sea Scouts is part of the <strong>Bayside District</strong> of Scouts Victoria — a network of Scout Groups across the inner-south Melbourne suburbs. Being part of the district means our members can participate in district-wide events including:</p>
+          <ul>
+            <li>The District Billy Cart Derby (Cubs)</li>
+            <li>Gilweroo — the regional Scout camping event</li>
+            <li>Joint water activities and sailing regattas</li>
+            <li>District Cuboree events</li>
+            <li>Leadership training courses</li>
+          </ul>
+          <p>The district provides additional resources, training for leaders, and helps coordinate major events that individual Groups couldn't run alone.</p>
+        </div>
+        <div>
+          <span class="section-label">Parent involvement</span>
+          <h2>Parent Committee</h2>
+          <p>Our Group is supported by an active <strong>Parent Committee</strong>, which plays a vital role in the Group's operation and sustainability.</p>
+          <div class="info-box orange">
+            <h4>About the Committee</h4>
+            <ul style="margin:0;">
+              <li>Members are appointed on a <strong>12-month term</strong></li>
+              <li>Meets <strong>monthly</strong> to plan and review Group activities</li>
+              <li>Manages Group finances, fundraising and facilities</li>
+              <li>Organises family and community events</li>
+              <li>Supports leaders with logistics and resources</li>
+            </ul>
+          </div>
+          <p>All families are expected to participate in fundraising activities to help keep fees affordable and programs running.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       VOLUNTEERING & OUR HALL
+       ============================================= -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Get involved</span>
+          <h2>Volunteer with us</h2>
+          <p>Scouting runs on volunteers. Whether you have a relevant skill, a few hours a week, or just enthusiasm — there is a role for you. Our adult leaders come from all walks of life and bring skills ranging from sailing and construction to cooking and environmental science.</p>
+
+          <div class="info-box green">
+            <h4>✅ Requirements for adult volunteers</h4>
+            <ul style="margin:0;">
+              <li><strong>Working With Children Check</strong> (WWC) — required for all adults</li>
+              <li><strong>National Police Check</strong> — required for all adults</li>
+              <li>Scouts Victoria induction and training</li>
+              <li>First aid certification (training provided)</li>
+            </ul>
+          </div>
+
+          <p>Leader training is fully supported by Scouts Victoria and includes a comprehensive program covering youth development, outdoor skills, risk management and more. You don't need to have been a Scout yourself to become a leader.</p>
+          <p>Contact the Group Leader to find out about current volunteering opportunities.</p>
+          <a href="contact.html" class="btn btn-blue">Get in Touch</a>
+        </div>
+        <div>
+          <span class="section-label">Our home</span>
+          <h2>The Scout Hall</h2>
+          <p>Our group is based at our Scout Hall at:</p>
+          <div class="card card-body" style="background:var(--navy); color:white; margin-bottom:1.5rem;">
+            <div style="font-size:2rem; margin-bottom:.75rem;">📍</div>
+            <h3 style="color:white; margin-bottom:.5rem;">34 Wilson Street</h3>
+            <p style="color:rgba(255,255,255,0.8); margin:0;">Brighton VIC 3186</p>
+          </div>
+          <p>The hall is our weekly meeting place and the base for many of our activities. It has meeting rooms, storage for our equipment, and a space where generations of Scouts have gathered before heading out on their next adventure.</p>
+          <p>Weekly meetings for each section are held at the hall — see the <a href="contact.html">Contact page</a> for a full schedule of meeting nights and times.</p>
+          <a href="https://maps.google.com/?q=34+Wilson+Street+Brighton+VIC+3186" target="_blank" rel="noopener" class="btn btn-orange">Get Directions →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Want to join our team?</h2>
+      <p>Whether as a young member or an adult volunteer — there's a place for you at 1st/14th Brighton Sea Scouts.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="join.html" class="btn btn-outline-white btn-lg">Join as a Youth Member</a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">Enquire About Volunteering</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="logo.svg" alt="1st/14th Brighton Sea Scouts">
+            <div class="logo-text">
+              <span class="group-name">1st/14th Brighton Sea Scouts</span>
+              <span class="group-sub">Since 1908</span>
+            </div>
+          </div>
+          <p class="footer-desc">Providing young people aged 5–25 with adventures, skills and friendships in Brighton, Victoria since 1908. Part of Scouts Australia — the world's largest youth organisation.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sections.html">Age Sections</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="join.html">How to Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="sections.html#joeys">Joey Scouts (5–8)</a></li>
+            <li><a href="sections.html#cubs">Cub Scouts (8–11)</a></li>
+            <li><a href="sections.html#scouts">Scouts (11–15)</a></li>
+            <li><a href="sections.html#venturers">Venturers (15–18)</a></li>
+            <li><a href="sections.html#rovers">Rovers (18–25)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <p>📍 34 Wilson Street, Brighton VIC 3186</p>
+          <p>📞 <a href="tel:0419893739">0419 893 739</a></p>
+          <p>✉️ <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au">Email the Group Leader</a></p>
+          <p>🔗 <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a></p>
+          <p>🔗 <a href="https://scouts.com.au" target="_blank" rel="noopener">Scouts Australia</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 1st/14th Brighton Sea Scouts. All rights reserved.</span>
+        <span>Part of <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> · <a href="https://scouts.com.au" target="_blank" rel="noopener">Scouts Australia</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(btn) {
+      const isOpen = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      document.querySelector('.mobile-nav').classList.toggle('open', isOpen);
+      document.querySelector('.nav-overlay').classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+    function closeMenu() {
+      document.querySelector('.hamburger').classList.remove('open');
+      document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+      document.querySelector('.mobile-nav').classList.remove('open');
+      document.querySelector('.nav-overlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  </script>
+</body>
+</html>

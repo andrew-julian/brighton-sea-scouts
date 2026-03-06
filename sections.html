@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Sections — 1st/14th Brighton Sea Scouts</title>
+  <meta name="description" content="Explore our five Scout sections for ages 5–25: Joey Scouts, Cub Scouts, Scouts, Venturers and the Surrey Thomas Rover Crew. Find the right section for your child.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <a href="#">Child Safe Organisation</a> ·
+    <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> ·
+    <a href="https://shop.scoutsaustralia.com.au" target="_blank" rel="noopener">Scout Shop</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="logo.svg" alt="1st/14th Brighton Sea Scouts emblem">
+        <div class="logo-text">
+          <span class="group-name">1st/14th Brighton</span>
+          <span class="group-sub">Sea Scouts · Since 1908</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="sections.html" class="active">Age Sections</a>
+        <a href="activities.html">Activities</a>
+        <a href="join.html">How to Join</a>
+        <a href="contact.html">Contact</a>
+        <a href="join.html" class="nav-join-btn">Join Free →</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" onclick="closeMenu()"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="sections.html" class="active">👦 Age Sections</a>
+    <a href="activities.html">🏕️ Activities</a>
+    <a href="join.html">📋 How to Join</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="join.html" class="nav-join-btn">Try 3 Nights FREE →</a>
+  </nav>
+
+  <div class="orange-stripe"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-pattern">
+      <svg class="pattern-right" viewBox="0 0 280 420" xmlns="http://www.w3.org/2000/svg" fill="#1A4A9E" opacity="0.12" aria-hidden="true">
+        <circle cx="120" cy="60" r="25" fill="none" stroke="#1A4A9E" stroke-width="4"/>
+        <path d="M95,60 L145,60 M120,35 L120,85 M102,42 L138,78 M138,42 L102,78"/>
+        <path d="M50,150 L130,200 L200,150 L170,250 L130,220 L90,250Z"/>
+        <circle cx="200" cy="320" r="18"/>
+        <path d="M185,335 L175,380 L195,375 L210,380 L200,335Z"/>
+        <path d="M185,350 L165,365 M200,350 L220,365"/>
+      </svg>
+    </div>
+    <div class="container" style="position:relative; z-index:2;">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Age Sections</span>
+      </div>
+      <h1>Age Sections</h1>
+      <p>A journey of up to 20 years — from Joey Scouts all the way through to Rovers. Find the right section for your young person.</p>
+    </div>
+  </section>
+
+  <!-- Quick jump nav -->
+  <section class="section-sm section-white" style="border-bottom:1px solid var(--navy-pale);">
+    <div class="container">
+      <div style="display:flex; gap:.75rem; flex-wrap:wrap; justify-content:center;">
+        <a href="#joeys"     class="btn btn-blue" style="font-size:.82rem; padding:.5rem 1.1rem;">🐨 Joey Scouts (5–8)</a>
+        <a href="#cubs"      class="btn btn-blue" style="font-size:.82rem; padding:.5rem 1.1rem; background:var(--section-cubs);">🐻 Cub Scouts (8–11)</a>
+        <a href="#scouts"    class="btn btn-blue" style="font-size:.82rem; padding:.5rem 1.1rem; background:var(--section-scouts);">⚜️ Scouts (11–15)</a>
+        <a href="#venturers" class="btn btn-blue" style="font-size:.82rem; padding:.5rem 1.1rem; background:var(--section-venturers);">🧗 Venturers (15–18)</a>
+        <a href="#rovers"    class="btn btn-blue" style="font-size:.82rem; padding:.5rem 1.1rem; background:var(--section-rovers);">⚓ Rovers (18–25)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       JOEY SCOUTS
+       ============================================= -->
+  <section class="section section-off-white" id="joeys">
+    <div class="container">
+      <div class="section-card joey-card">
+        <div class="section-card-header">
+          <div class="section-emoji">🐨</div>
+          <h3>Joey Scouts</h3>
+          <div class="age-range">Ages 5–8</div>
+          <div class="meeting-time">📅 Tuesdays 6:30–7:30pm</div>
+          <div class="meeting-time" style="margin-top:.4rem;">👥 ~30 Joeys</div>
+        </div>
+        <div class="section-card-body">
+          <p>The youngest members of our Scouting family, the <strong>Joey Scout Mob</strong> gives children aged 5–8 a safe, fun and exciting introduction to Scouting. In their "mob", Joeys discover the world around them through play, creativity, and simple outdoor adventures.</p>
+
+          <h4>About the Program</h4>
+          <ul>
+            <li>Mob format — a supportive, nurturing group environment for young children</li>
+            <li>Focus on discovering the natural world, sharing, and caring</li>
+            <li>Activities include nature walks, craft, simple cooking, games and songs</li>
+            <li>First steps in the Scouting journey — lays the foundation for Cubs and beyond</li>
+          </ul>
+
+          <h4>Annual Highlights</h4>
+          <ul>
+            <li>🌙 <strong>Sleepover at the Hall</strong> — a first-ever overnight adventure in a familiar, safe environment</li>
+            <li>🦉 <strong>Possum and Owl Spotting</strong> at Lennox Park — exploring local wildlife at night</li>
+            <li>🪨 <strong>Ricketts Point Rock Pools</strong> — hands-on marine science and discovery</li>
+            <li>🦘 <strong>Kangaree</strong> — the statewide Joey overnight sleepover event, held every 2 years, bringing thousands of Joeys together from across Victoria</li>
+          </ul>
+
+          <h4>Peak Award</h4>
+          <p>Joeys work towards the <strong>Promise Challenge</strong> — the highest award in the Joey Scout section, recognising achievement across a range of activities.</p>
+
+          <span class="peak-award">🏅 Peak Award: Promise Challenge</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       CUB SCOUTS
+       ============================================= -->
+  <section class="section section-white" id="cubs">
+    <div class="container">
+      <div class="section-card cubs-card">
+        <div class="section-card-header">
+          <div class="section-emoji">🐻</div>
+          <h3>Cub Scouts</h3>
+          <div class="age-range">Ages 8–11</div>
+          <div class="meeting-time">📅 Wednesdays 7:00–8:30pm</div>
+          <div class="meeting-time" style="margin-top:.4rem;">👥 ~70 Cubs</div>
+        </div>
+        <div class="section-card-body">
+          <p>With around <strong>70 active members</strong>, our Cub Scout Pack is one of the largest and most active in the region. Cubs aged 8–11 experience a rich, varied program that builds confidence, teamwork and a lifelong love of the outdoors — all while having a lot of fun.</p>
+
+          <h4>About the Program</h4>
+          <ul>
+            <li>Pack format — a vibrant group structure with strong team spirit</li>
+            <li>Adventure skills: canoeing, navigation, knots and outdoor cooking</li>
+            <li>STEM challenges: catapult building, construction, problem-solving</li>
+            <li>Community service, environmental awareness, cultural activities</li>
+            <li>Regular camps — Cubs camp at least once per year</li>
+          </ul>
+
+          <h4>Annual Highlights</h4>
+          <ul>
+            <li>🍳 <strong>Master Chef Night</strong> — our popular annual cooking competition. Teams design, cook and present a full meal</li>
+            <li>🛒 <strong>District Billy Cart Derby</strong> — Cubs design and race billy carts against other Packs in the Bayside District</li>
+            <li>💧 <strong>Water Activity Nights</strong> — regular water-based fun at local aquatic facilities</li>
+            <li>🏕️ <strong>Annual Camp</strong> — a multi-day camp where Cubs put their outdoor skills into practice</li>
+            <li>🌏 <strong>Cuboree</strong> — held every 3 years at Gilwell Park, Gembrook, this epic 5-day event brings thousands of Cubs together from across Victoria for the ultimate Cub adventure</li>
+          </ul>
+
+          <h4>Peak Award</h4>
+          <p>Cubs work through a structured progression towards the <strong>Grey Wolf</strong> — the highest award in the Cub Scout section.</p>
+
+          <span class="peak-award">🏅 Peak Award: Grey Wolf</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SCOUTS
+       ============================================= -->
+  <section class="section section-off-white" id="scouts">
+    <div class="container">
+      <div class="section-card scouts-card">
+        <div class="section-card-header">
+          <div class="section-emoji">⚜️</div>
+          <h3>Scouts</h3>
+          <div class="age-range">Ages 11–15</div>
+          <div class="meeting-time">📅 Thursdays 7:00–9:00pm</div>
+        </div>
+        <div class="section-card-body">
+          <p>The Scout Troop is where the real adventure begins. Scouts aged 11–15 operate in the iconic <strong>patrol system</strong> — small teams led by a Patrol Leader, planning and running their own activities with increasing independence. This is where leadership, self-reliance and genuine outdoor skills are forged.</p>
+
+          <h4>About the Program</h4>
+          <ul>
+            <li>Patrol system — youth-led patrols with elected Patrol Leaders</li>
+            <li>Progressive badge pathway: <strong>Pioneer → Explorer → Adventurer</strong></li>
+            <li>Outdoor Adventure Skills: navigation, campcraft, cooking, first aid</li>
+            <li>Sailing courses on Port Phillip Bay — our Sea Scout heritage in action</li>
+            <li>Canoeing on local waterways</li>
+            <li>Geocaching, orienteering and navigation challenges</li>
+            <li>Community service projects and leadership development</li>
+          </ul>
+
+          <h4>Major Events</h4>
+          <ul>
+            <li>🏕️ <strong>Gilweroo</strong> — our annual regional Scout camping and skills competition in November</li>
+            <li>🌏 <strong>AJ2025 — Australian Jamboree</strong> — the national Scout Jamboree in Maryborough, Queensland, bringing together thousands of Scouts from across Australia and the world</li>
+            <li>⛵ Regular sailing and water activity days on Port Phillip Bay</li>
+            <li>🧭 Patrol overnight hikes and navigation challenges</li>
+          </ul>
+
+          <h4>Peak Award</h4>
+          <p>The highest achievement in the Scout section is the <strong>Scout Medallion</strong> — a nationally recognised award representing excellence across all areas of the Scout program.</p>
+
+          <span class="peak-award">🏅 Peak Award: Scout Medallion</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       VENTURERS
+       ============================================= -->
+  <section class="section section-white" id="venturers">
+    <div class="container">
+      <div class="section-card venturers-card">
+        <div class="section-card-header">
+          <div class="section-emoji">🧗</div>
+          <h3>Venturers</h3>
+          <div class="age-range">Ages 15–18</div>
+          <div class="meeting-time">📅 Fridays 7:30–9:30pm</div>
+        </div>
+        <div class="section-card-body">
+          <p>The Venturer Unit is a <strong>self-led</strong> group for young people aged 15–18. Venturers plan, organise and lead their own adventures and projects — with adult advisers available for support and safety, not direction. There is <strong>no prior Scouting experience required</strong> to join.</p>
+
+          <h4>About the Program</h4>
+          <ul>
+            <li>Self-directed — Venturers set their own program and elect their own leadership</li>
+            <li>Environmental leadership: <strong>Reef Environment Project</strong> at Holloway Bend, monitoring Port Phillip Bay's reef ecosystem</li>
+            <li>Achievement Pathways: Special Interest Areas, community projects, outdoor skills</li>
+            <li>No prior Scouting experience needed — welcome any time from age 15</li>
+          </ul>
+
+          <h4>Activities</h4>
+          <ul>
+            <li>⛵ Sailing on Port Phillip Bay</li>
+            <li>🚤 Power boating certification</li>
+            <li>🛶 Kayaking and sea kayaking</li>
+            <li>🚵 Mountain bike riding</li>
+            <li>🧗 Caving expeditions</li>
+            <li>⛷️ Skiing — including Falls Creek trips</li>
+            <li>🌿 Environmental monitoring and reef science</li>
+          </ul>
+
+          <h4>The Queen's Scout Award</h4>
+          <p>The highest award in Venturers is the prestigious <strong>Queen's Scout Award</strong> — one of Australia's most recognised youth achievement awards. It is acknowledged for entry by several Australian universities as a mark of exceptional character and achievement.</p>
+
+          <div class="info-box orange" style="margin-top:1rem;">
+            <h4>🪸 Reef Environment Project</h4>
+            <p style="margin:0;">Our Venturer Unit leads ongoing environmental monitoring at Holloway Bend on Port Phillip Bay — studying the reef ecosystem, tracking microplastic pollution, and contributing to Commonwealth-funded marine research. Real science, with real impact.</p>
+          </div>
+
+          <span class="peak-award">🏅 Peak Award: Queen's Scout Award</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ROVERS
+       ============================================= -->
+  <section class="section section-off-white" id="rovers">
+    <div class="container">
+      <div class="section-card rovers-card">
+        <div class="section-card-header">
+          <div class="section-emoji">⚓</div>
+          <h3>Surrey Thomas<br>Rover Crew</h3>
+          <div class="age-range">Ages 18–25</div>
+          <div class="meeting-time">📅 Mondays 7:00–9:00pm</div>
+        </div>
+        <div class="section-card-body">
+          <p>The <strong>Surrey Thomas Rover Crew</strong> is our adult youth section for those aged 18–25. Rovers are entirely self-run — the Crew elects its own <strong>Crew Leader</strong> and plans all of its own activities. There is <strong>no prior Scouting experience required</strong> to join.</p>
+
+          <h4>About Rovers</h4>
+          <ul>
+            <li>Fully self-run crew — democratic, youth-led organisation</li>
+            <li>Elected Crew Leader manages the group's activities and direction</li>
+            <li>Open to anyone aged 18–25, with or without prior Scouting experience</li>
+            <li>Social, adventurous and community-focused — a great social group for young adults</li>
+          </ul>
+
+          <h4>Annual Events</h4>
+          <ul>
+            <li>🌊 <strong>Surf Camp at Anglesea</strong> — annual surfing camp on the Great Ocean Road</li>
+            <li>🥾 <strong>Easter Hiking Trip</strong> — multi-day hiking adventure over the Easter long weekend</li>
+            <li>🌧️ <strong>Mud Bash</strong> — an annual outdoor adventure involving significantly more mud than most people consider reasonable</li>
+            <li>🎉 <strong>Annual Ball</strong> — the Rover Crew's formal annual celebration and social event</li>
+            <li>⛷️ <strong>Falls Creek Ski Chalet</strong> — annual ski trip at our group's chalet at Falls Creek</li>
+            <li>🌏 <strong>National Rover Moot</strong> — held every 3 years, bringing Rover Crews together from across Australia</li>
+          </ul>
+
+          <h4>Peak Award</h4>
+          <p>The highest award available to Rovers is the <strong>Baden-Powell Award</strong> — named after Scouting's founder, Robert Baden-Powell, this award recognises outstanding achievement across community service, personal development and adventure.</p>
+
+          <span class="peak-award">🏅 Peak Award: Baden-Powell Award</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       JOIN CTA
+       ============================================= -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Found your section?</h2>
+      <p>Try it free for 3 nights — no joining fee, no pressure. Just turn up and see if Scouting is right for you.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="join.html" class="btn btn-outline-white btn-lg">How to Join →</a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="logo.svg" alt="1st/14th Brighton Sea Scouts">
+            <div class="logo-text">
+              <span class="group-name">1st/14th Brighton Sea Scouts</span>
+              <span class="group-sub">Since 1908</span>
+            </div>
+          </div>
+          <p class="footer-desc">Providing young people aged 5–25 with adventures, skills and friendships in Brighton, Victoria since 1908. Part of Scouts Australia — the world's largest youth organisation.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sections.html">Age Sections</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="join.html">How to Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#joeys">Joey Scouts (5–8)</a></li>
+            <li><a href="#cubs">Cub Scouts (8–11)</a></li>
+            <li><a href="#scouts">Scouts (11–15)</a></li>
+            <li><a href="#venturers">Venturers (15–18)</a></li>
+            <li><a href="#rovers">Rovers (18–25)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <p>📍 34 Wilson Street, Brighton VIC 3186</p>
+          <p>📞 <a href="tel:0419893739">0419 893 739</a></p>
+          <p>✉️ <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au">Email the Group Leader</a></p>
+          <p>🔗 <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 1st/14th Brighton Sea Scouts. All rights reserved.</span>
+        <span>Part of <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a> · <a href="https://scouts.com.au" target="_blank" rel="noopener">Scouts Australia</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(btn) {
+      const isOpen = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      document.querySelector('.mobile-nav').classList.toggle('open', isOpen);
+      document.querySelector('.nav-overlay').classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+    function closeMenu() {
+      document.querySelector('.hamburger').classList.remove('open');
+      document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+      document.querySelector('.mobile-nav').classList.remove('open');
+      document.querySelector('.nav-overlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  </script>
+</body>
+</html>

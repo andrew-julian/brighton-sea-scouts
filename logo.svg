@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 90" width="80" height="90">
+  <!-- Sailing emblem only — for header use -->
+  <!-- Mast -->
+  <line x1="34" y1="76" x2="34" y2="10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Fleur-de-lis top -->
+  <path d="M34,10 C30,16 30,22 34,26 C38,22 38,16 34,10Z" fill="currentColor"/>
+  <path d="M34,26 C28,24 22,19 22,14 C25,17 30,22 34,26Z" fill="currentColor"/>
+  <path d="M34,26 C40,24 46,19 46,14 C43,17 38,22 34,26Z" fill="currentColor"/>
+  <rect x="31" y="25" width="6" height="3.5" rx="1" fill="currentColor"/>
+  <rect x="28.5" y="28" width="11" height="2.5" rx="1" fill="currentColor"/>
+  <!-- Main sail -->
+  <path d="M34,14 C46,22 60,40 60,76 L34,76 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Foresail -->
+  <path d="M34,32 C44,38 54,54 50,76 L34,76 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- Hull -->
+  <path d="M20,76 Q34,86 60,78 Q50,83 34,84 Q18,83 20,76Z" fill="currentColor"/>
+  <!-- Waves -->
+  <path d="M8,88 Q16,85 24,88 Q32,91 40,88 Q48,85 58,88 Q64,89.5 72,88" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>
