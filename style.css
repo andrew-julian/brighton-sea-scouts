@@ -100,9 +100,9 @@ h1, h2, h3, h4, h5 {
   letter-spacing: -0.015em;
 }
 
-h1 { font-size: clamp(2.4rem, 5.5vw, 4rem);   font-weight: 900; letter-spacing: -0.025em; }
-h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem);  }
-h3 { font-size: clamp(1.15rem, 2vw, 1.5rem);   }
+h1 { font-size: clamp(2.6rem, 6vw, 4.5rem);   font-weight: 900; letter-spacing: -0.03em; }
+h2 { font-size: clamp(1.75rem, 3vw, 2.5rem);   font-weight: 800; letter-spacing: -0.02em; }
+h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); font-weight: 700; }
 h4 { font-size: 1rem;   font-weight: 700; }
 h5 { font-size: .875rem; font-weight: 700; }
 
@@ -497,36 +497,40 @@ strong { color: var(--text-dark); }
   position: relative;
   background: var(--navy);
   color: var(--white);
-  padding: 7rem 0 6rem;
+  padding: 8rem 0 7rem;
   overflow: hidden;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
 }
 
-/* Scouts Victoria gumtree silhouette background */
+/* Photo background handled via inline style; CSS adds gradient overlay */
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('images/gumtree-bg.png');
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  opacity: 0.10;
+  background: linear-gradient(
+    175deg,
+    rgba(10,25,70,0.55) 0%,
+    rgba(8,20,60,0.42) 40%,
+    rgba(4,12,40,0.68) 100%
+  );
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
-/* Subtle radial glow behind hero content */
+/* Warm orange glow at base — sea-horizon feel */
 .hero::before {
   content: '';
   position: absolute;
-  top: -20%;
+  bottom: -80px;
   left: 50%;
   transform: translateX(-50%);
-  width: 800px;
-  height: 600px;
-  background: radial-gradient(ellipse, rgba(0,123,195,0.3) 0%, transparent 70%);
+  width: 900px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(244,121,32,0.18) 0%, transparent 65%);
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
 .hero-pattern {
@@ -539,7 +543,7 @@ strong { color: var(--text-dark); }
 
 .hero-pattern svg {
   position: absolute;
-  opacity: 0.09;
+  opacity: 0.06;
 }
 
 .hero-pattern .pattern-left  { left: -10px;  bottom: 0; height: 90%; width: auto; }
@@ -557,15 +561,14 @@ strong { color: var(--text-dark); }
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(244,121,32,0.18);
-  border: 1px solid rgba(244,121,32,0.5);
-  color: var(--orange);
+  background: var(--orange);
+  color: var(--white);
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 0.4rem 1.1rem;
+  padding: 0.45rem 1.2rem;
   border-radius: 50px;
   margin-bottom: 1.5rem;
 }
@@ -573,10 +576,11 @@ strong { color: var(--text-dark); }
 .hero h1 {
   color: var(--white);
   margin-bottom: 1.4rem;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
-  max-width: 700px;
+  text-shadow: 0 3px 20px rgba(0,0,0,0.45);
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
 }
 
 .hero h1 em {
@@ -712,14 +716,14 @@ strong { color: var(--text-dark); }
   gap: 0.4rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 0.72rem;
-  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--orange);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
 }
 
-.section-title { margin-bottom: 0.6rem; }
+.section-title { margin-bottom: 0.75rem; }
 
 .section-subtitle {
   color: var(--text-light);
@@ -736,11 +740,11 @@ strong { color: var(--text-dark); }
 .section-header h2::after {
   content: '';
   display: block;
-  width: 48px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--orange), var(--gold));
+  width: 40px;
+  height: 3px;
+  background: var(--orange);
   border-radius: 2px;
-  margin-top: 0.9rem;
+  margin-top: 1rem;
 }
 
 .section-header.text-center h2::after { margin-left: auto; margin-right: auto; }
@@ -786,31 +790,47 @@ strong { color: var(--text-dark); }
 .age-card {
   background: var(--white);
   border-radius: var(--radius-md);
-  padding: 1.75rem 1.25rem;
+  padding: 0 1.25rem 1.75rem;
   text-align: center;
-  box-shadow: var(--shadow-sm);
-  border-bottom: 4px solid;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* top accent strip via pseudo-element */
+  position: relative;
 }
+
+/* Top accent strip — replaces bottom border, more modern */
+.age-card::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.age-card.joey::before      { background: var(--section-joey); }
+.age-card.cubs::before      { background: var(--section-cubs); }
+.age-card.scouts::before    { background: var(--section-scouts); }
+.age-card.venturers::before { background: var(--section-venturers); }
+.age-card.rovers::before    { background: var(--section-rovers); }
 
 .age-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 
-.age-card.joey      { border-color: var(--section-joey); }
-.age-card.cubs      { border-color: var(--section-cubs); }
-.age-card.scouts    { border-color: var(--section-scouts); }
-.age-card.venturers { border-color: var(--section-venturers); }
-.age-card.rovers    { border-color: var(--section-rovers); }
-
 .age-card .age-icon {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.1rem;
-  font-size: 1.7rem;
+  margin: 0 auto 1rem;
+  font-size: 1.8rem;
 }
 
 .age-card.joey      .age-icon { background: var(--joey-pale); }
@@ -822,24 +842,24 @@ strong { color: var(--text-dark); }
 .age-card .age-name {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-dark);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.3rem;
 }
 
 .age-card .age-range {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  color: var(--text-light);
-  margin-bottom: 0.45rem;
+  color: var(--orange);
+  margin-bottom: 0.55rem;
 }
 
 .age-card .age-day {
-  font-size: 0.76rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--text-mid);
   background: var(--off-white);
-  padding: 0.25rem 0.6rem;
+  padding: 0.25rem 0.65rem;
   border-radius: 50px;
   display: inline-block;
 }
@@ -857,11 +877,11 @@ strong { color: var(--text-dark); }
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  min-height: 240px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2.25rem 2rem;
+  padding: 2.5rem 2rem;
   box-shadow: var(--shadow-md);
   transition: transform var(--transition), box-shadow var(--transition);
 }
@@ -870,7 +890,7 @@ strong { color: var(--text-dark); }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.25) 50%, transparent 70%);
   z-index: 0;
 }
 
@@ -885,19 +905,20 @@ strong { color: var(--text-dark); }
 
 .adventure-card h3 {
   color: var(--white);
-  margin-bottom: 0.4rem;
-  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
   position: relative;
   z-index: 1;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
 }
 
 .adventure-card p {
-  color: rgba(255,255,255,0.85);
-  font-size: 0.9rem;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
   margin: 0;
   position: relative;
   z-index: 1;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .adventure-card.sail  { background: linear-gradient(145deg, #00335D 0%, #007BC3 100%); }
