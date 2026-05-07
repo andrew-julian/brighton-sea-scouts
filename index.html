@@ -62,7 +62,7 @@
        HERO
        ============================================= -->
   <section class="hero" style="min-height: 560px; display: flex; align-items: center; background-image: url('images/sv-scouts-2-web.jpg'); background-size: cover; background-position: center top;">
-    <div style="position:absolute; inset:0; background:rgba(8,20,60,0.72); z-index:0;"></div>
+    <div style="position:absolute; inset:0; background:rgba(8,20,60,0.48); z-index:0;"></div>
     <div class="hero-pattern">
       <!-- SVG silhouette pattern — left side -->
       <svg class="pattern-left" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg" fill="#1A4A9E" aria-hidden="true">
@@ -150,6 +150,42 @@
   </section>
 
   <!-- =============================================
+       NOTICE BOARD — managed via SaySite D1
+       Shown when announcement content_value is non-empty.
+       ============================================= -->
+  <div class="notice-board-wrapper" id="notice-board">
+    <div class="container">
+      <div class="notice-board-inner">
+        <span class="notice-board-icon">📌</span>
+        <p class="notice-board-text"><!-- ss:announcement --><!-- /ss:announcement --></p>
+      </div>
+    </div>
+  </div>
+  <style>
+    .notice-board-wrapper {
+      background: #fff3cd; border-bottom: 2px solid #ffc107;
+      padding: .75rem 0; display: none;
+    }
+    .notice-board-wrapper.has-content { display: block; }
+    .notice-board-inner {
+      display: flex; align-items: flex-start; gap: .75rem;
+      max-width: 900px; margin: 0 auto; padding: 0 1rem;
+    }
+    .notice-board-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: .1rem; }
+    .notice-board-text { margin: 0; font-size: .97rem; line-height: 1.6; color: #333; font-weight: 500; }
+  </style>
+  <script>
+    // Show notice board only when announcement content is non-empty
+    document.addEventListener('DOMContentLoaded', function() {
+      var p = document.querySelector('.notice-board-text');
+      if (p && p.textContent.trim()) {
+        document.getElementById('notice-board').classList.add('has-content');
+      }
+    });
+  </script>
+
+
+  <!-- =============================================
        AGE SECTIONS — Quick Overview
        ============================================= -->
   <section class="section section-white">
@@ -164,31 +200,31 @@
           <div class="age-icon">🐨</div>
           <div class="age-name">Joey Scouts</div>
           <div class="age-range">Ages 5–8</div>
-          <div class="age-day">Tuesdays 6:30pm</div>
+          <div class="age-day"><!-- ss:meeting_time_joeys -->Tuesdays 6:30pm<!-- /ss:meeting_time_joeys --></div>
         </a>
         <a href="sections.html#cubs" class="age-card cubs" style="text-decoration:none;">
           <div class="age-icon">🐻</div>
           <div class="age-name">Cub Scouts</div>
           <div class="age-range">Ages 8–11</div>
-          <div class="age-day">Wednesdays 7:00pm</div>
+          <div class="age-day"><!-- ss:meeting_time_cubs -->Wednesdays 7:00pm<!-- /ss:meeting_time_cubs --></div>
         </a>
         <a href="sections.html#scouts" class="age-card scouts" style="text-decoration:none;">
           <div class="age-icon">⚜️</div>
           <div class="age-name">Scouts</div>
           <div class="age-range">Ages 11–15</div>
-          <div class="age-day">Thursdays 7:00pm</div>
+          <div class="age-day"><!-- ss:meeting_time_scouts -->Thursdays 7:00pm<!-- /ss:meeting_time_scouts --></div>
         </a>
         <a href="sections.html#venturers" class="age-card venturers" style="text-decoration:none;">
           <div class="age-icon">🧗</div>
           <div class="age-name">Venturers</div>
           <div class="age-range">Ages 15–18</div>
-          <div class="age-day">Fridays 7:00pm</div>
+          <div class="age-day"><!-- ss:meeting_time_venturers -->Fridays 7:00pm<!-- /ss:meeting_time_venturers --></div>
         </a>
         <a href="sections.html#rovers" class="age-card rovers" style="text-decoration:none;">
           <div class="age-icon">⚓</div>
           <div class="age-name">Rovers</div>
           <div class="age-range">Ages 18–25</div>
-          <div class="age-day">Saturdays 9:45am</div>
+          <div class="age-day"><!-- ss:meeting_time_rovers -->Saturdays 9:45am<!-- /ss:meeting_time_rovers --></div>
         </a>
       </div>
     </div>
@@ -389,7 +425,7 @@
           <h4>Contact</h4>
           <p>📍 34 Wilson Street, Brighton VIC 3186</p>
           <p>📞 <a href="tel:0419893739">0419 893 739</a></p>
-          <p>✉️ <a href="mailto:gl.brighton1st-14th@scoutsvictoria.com.au">Email the Group Leader</a></p>
+          <p>✉️ <a href="mailto:<!-- ss:contact_email -->gl.brighton1st-14th@scoutsvictoria.com.au<!-- /ss:contact_email -->">Email the Group Leader</a></p>
           <p>🔗 <a href="https://scoutsvictoria.com.au" target="_blank" rel="noopener">Scouts Victoria</a></p>
           <p>🔗 <a href="https://scouts.com.au" target="_blank" rel="noopener">Scouts Australia</a></p>
         </div>

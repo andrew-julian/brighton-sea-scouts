@@ -210,6 +210,30 @@ strong { color: var(--text-dark); }
   box-shadow: 0 6px 20px rgba(0,32,96,0.25);
 }
 
+/* Aliases used across site */
+.btn-primary {
+  background: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+}
+.btn-primary:hover {
+  background: var(--orange-dark);
+  border-color: var(--orange-dark);
+  box-shadow: 0 6px 20px rgba(244,121,32,0.4);
+  color: var(--white);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+.btn-outline:hover {
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 6px 20px rgba(0,32,96,0.25);
+}
+
 .btn-lg  { padding: 1.05rem 2.5rem; font-size: 1rem; }
 .btn-sm  { padding: 0.55rem 1.2rem; font-size: 0.82rem; }
 
@@ -561,8 +585,8 @@ strong { color: var(--text-dark); }
 }
 
 .hero p.hero-lead {
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
-  color: rgba(255,255,255,0.82);
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+  color: rgba(255,255,255,0.85);
   margin-bottom: 2.5rem;
   max-width: 580px;
   margin-left: auto;
@@ -699,7 +723,7 @@ strong { color: var(--text-dark); }
 
 .section-subtitle {
   color: var(--text-light);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   margin-bottom: 3rem;
   line-height: 1.7;
   max-width: 600px;
@@ -739,7 +763,7 @@ strong { color: var(--text-dark); }
 
 .card-body   { padding: 2rem; }
 .card-title  { margin-bottom: 0.6rem; color: var(--text-dark); }
-.card-text   { color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; }
+.card-text   { color: var(--text-light); font-size: 1rem; margin-bottom: 0; line-height: 1.65; }
 
 /* ============================================================
    GRIDS

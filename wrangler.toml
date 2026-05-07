@@ -1,0 +1,11 @@
+name = "brighton-sea-scouts"
+compatibility_date = "2026-03-01"
+pages_build_output_dir = "."
+
+# ── D1 — SaySite database ────────────────────────────────────────────────────
+# Provides dynamic content (meeting times, announcements, etc.)
+# Written by the SaySite Worker (Tier 1 fast path), read by this Pages Function.
+[[d1_databases]]
+binding = "saysite_db"
+database_name = "saysite-db"
+database_id = "ad87c0a6-219b-41f7-a27b-74281930affc"
