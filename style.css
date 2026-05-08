@@ -1358,10 +1358,10 @@ strong { color: var(--text-dark); }
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--navy);
-  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  cursor: default;
 }
 
-.activity-pill:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
 
 /* Reef Project Callout */
 .reef-callout {
