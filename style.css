@@ -291,7 +291,7 @@ strong { color: var(--text-dark); }
 }
 
 .site-logo img {
-  height: 46px;
+  height: 52px;
   width: auto;
   color: var(--white);
   filter: brightness(0) invert(1);
@@ -307,7 +307,7 @@ strong { color: var(--text-dark); }
 .logo-text .group-name {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--white);
   letter-spacing: -0.01em;
 }
@@ -367,12 +367,12 @@ strong { color: var(--text-dark); }
   flex-shrink: 0;
   margin-left: auto;
   margin-right: 0.75rem;
-  opacity: 0.92;
+  opacity: 1;
   transition: opacity var(--transition);
 }
 .vic-header-badge:hover { opacity: 1; }
 .vic-header-badge img {
-  height: 44px;
+  height: 62px;
   width: auto;
   display: block;
 }
