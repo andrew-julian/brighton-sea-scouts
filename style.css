@@ -1981,3 +1981,124 @@ strong { color: var(--text-dark); }
   .pathway-grid   { grid-template-columns: 1fr 1fr; }
   .hero-stats     { grid-template-columns: 1fr 1fr; }
 }
+
+/* ============================================================
+   BSS PHOTO GALLERY (home page)
+   ============================================================ */
+.bss-gallery {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 1rem;
+  align-items: start;
+}
+
+.bss-gallery-main {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: var(--navy-mid);
+}
+
+.bss-gallery-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  display: block;
+}
+
+.bss-gallery-hero-img.active { opacity: 1; }
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  transition: background var(--transition);
+  z-index: 5;
+  padding: 0;
+}
+
+.gallery-nav:hover { background: rgba(244,121,32,0.75); }
+.gallery-prev { left: 14px; }
+.gallery-next { right: 14px; }
+
+.bss-gallery-thumbs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+
+.bss-thumb {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity var(--transition), transform var(--transition);
+  border: 2px solid transparent;
+}
+
+.bss-thumb:hover { opacity: 0.9; transform: scale(1.02); }
+.bss-thumb.active { opacity: 1; border-color: var(--orange); }
+
+@media (max-width: 900px) {
+  .bss-gallery {
+    grid-template-columns: 1fr;
+  }
+  .bss-gallery-thumbs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .bss-gallery-thumbs {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+  }
+}
+
+/* ============================================================
+   BSS HISTORY PHOTO GRID (about page)
+   ============================================================ */
+.bss-history-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.6rem;
+}
+
+.bss-history-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition), opacity var(--transition);
+  opacity: 0.92;
+}
+
+.bss-history-img:hover { transform: scale(1.04); opacity: 1; }
+
+@media (max-width: 900px) {
+  .bss-history-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .bss-history-grid { grid-template-columns: repeat(2, 1fr); }
+}
