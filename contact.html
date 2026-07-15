@@ -260,30 +260,31 @@
         </div>
 
         <form class="card card-body" id="enquiry-form" action="https://formspree.io/f/xvzezplo" method="post" style="gap:0;">
+          <input type="hidden" name="_replyto" id="_replyto">
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-bottom:1.25rem;">
             <div>
               <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">First Name *</label>
-              <input type="text" name="firstname" required placeholder="e.g. Sarah" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
+              <input type="text" name="First Name" required placeholder="e.g. Sarah" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
             </div>
             <div>
               <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">Last Name *</label>
-              <input type="text" name="lastname" required placeholder="e.g. Smith" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
+              <input type="text" name="Last Name" required placeholder="e.g. Smith" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
             </div>
           </div>
 
           <div style="margin-bottom:1.25rem;">
             <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">Email Address *</label>
-            <input type="email" name="email" required placeholder="e.g. sarah@example.com" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
+            <input type="email" name="Email" required placeholder="e.g. sarah@example.com" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
           </div>
 
           <div style="margin-bottom:1.25rem;">
             <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">Phone Number</label>
-            <input type="tel" name="phone" placeholder="e.g. 0400 123 456" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
+            <input type="tel" name="Phone" placeholder="e.g. 0400 123 456" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box;">
           </div>
 
           <div style="margin-bottom:1.25rem;">
             <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">I'm enquiring about… *</label>
-            <select name="subject" required style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box; background:#fff; appearance:auto;">
+            <select name="_subject" required style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box; background:#fff; appearance:auto;">
               <option value="" disabled selected>Please select…</option>
               <option>Joining — Joey Scouts (ages 5–7)</option>
               <option>Joining — Cub Scouts (ages 7–10)</option>
@@ -297,7 +298,7 @@
 
           <div style="margin-bottom:1.5rem;">
             <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.9rem;">Your Message *</label>
-            <textarea name="body" required rows="5" placeholder="Tell us a little about yourself and how we can help…" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box; resize:vertical;"></textarea>
+            <textarea name="Message" required rows="5" placeholder="Tell us a little about yourself and how we can help…" style="width:100%; padding:.65rem .85rem; border:1.5px solid #d1d5db; border-radius:8px; font-size:.95rem; font-family:inherit; box-sizing:border-box; resize:vertical;"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Send Enquiry →</button>
@@ -307,6 +308,9 @@
         <script>
           (function() {
             var form = document.getElementById('enquiry-form');
+            var emailInput = form.querySelector('input[name="Email"]');
+            var replyTo = document.getElementById('_replyto');
+            emailInput.addEventListener('input', function() { replyTo.value = emailInput.value; });
             var status = document.getElementById('form-status');
             form.addEventListener('submit', function(e) {
               e.preventDefault();
