@@ -12,7 +12,7 @@
  *   TO_ADDRESS      — e.g. "groupleader@scoutsvictoria.org.au"
  */
 
-const FROM_ADDRESS = "noreply@brightonseascouts.org.au";
+const FROM_ADDRESS = "contact@brightonseascouts.org.au";
 const TO_ADDRESS   = "gl.1st-14thbrighton@scoutsvictoria.com.au";
 const SITE_NAME    = "1st/14th Brighton Sea Scouts";
 
