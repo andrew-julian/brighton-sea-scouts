@@ -142,7 +142,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const resendPayload = {
     from: `${SITE_NAME} <${FROM_ADDRESS}>`,
     to:   [TO_ADDRESS],
-    reply_to: TO_ADDRESS,
+    reply_to: email,
     subject,
     html,
     text,
