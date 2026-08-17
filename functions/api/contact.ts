@@ -13,7 +13,7 @@
  */
 
 const FROM_ADDRESS = "noreply@brightonseascouts.org.au";
-const TO_ADDRESS   = "gl.1st-14thbrighton@scoutsvictoria.com.au";
+const TO_ADDRESS   = "andrew@dcr.vc"; // TEMP: switch back to gl.1st-14thbrighton@scoutsvictoria.com.au after testing
 const SITE_NAME    = "1st/14th Brighton Sea Scouts";
 
 interface Env {
